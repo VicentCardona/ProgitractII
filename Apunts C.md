@@ -4,18 +4,18 @@
 - Resulta que podem convertir .source code. en `machine code` utilitzant una peça molt especial de programari anomenada `compilador`. Avui us presentarem a un compilador que us permetrà convertir el codi font en el llenguatge de programació `C` en codi màquina.
 - Avui, a més d'aprendre com programar, aprendràs com escriure un bon codi.
 - El codi es pot avaluar en tres eixos:
- * En primer lloc, **correctness** es refereix a «executa el codi com es pretén?» 
+ * En primer lloc, **correcció** es refereix a «executa el codi com es pretén?» 
 * En segon lloc, **disseny** es refereix a “com de bé està dissenyat el codi?”
 * Finalment, **estil** es refereix a "com d'estèticament agradable i coherent és el codi?"
 
 ## Hola mon!
 
-- El compilador que s'utilitza per a aquest curs és ,Visual Studio Code_, afectuosament anomenat , al qual es pot accedir mitjançant el mateix URL, o simplement com \*VS Code.\*
-- Una de les raons més importants que utilitzem el Codi VS és que té tot el programari necessari per al curs ja precarregat. Aquest curs i les instruccions van ser dissenyades pensant en VS Code. El millor sempre és utilitzar el codi VS per a les tasques en aquest curs.
+- El compilador que s'utilitza per a aquest curs és *Visual Studio Code*, afectuosament anomenat , al qual es pot accedir mitjançant el mateix URL, o simplement com \*VS Code.\*
+- Una de les raons més importants que utilitzem el VS Code és que té tot el programari necessari per al curs ja precarregat. Aquest curs i les instruccions van ser dissenyades pensant en VS Code. 
 - Podeu obrir el codi VS a [cs50.dev](https://cs50.dev/).
 - El compilador es pot dividir en diverses regions:
 
-![IDE](https://cs50.harvard.edu/x/2023/notes/1/cs50Week1Slide017.png "IDE") Observeu que hi ha un  explorerfile explorer. al costat esquerre on trobareu els vostres fitxers. A més, tingueu en compte que hi ha una regió al mig anomenada .text editor_ on podreu editar el vostre programa. Finalment, hi ha una `interfície de línia d'ordres`, coneguda com a CLICLI., .command line_ o .terminal window_, on podem enviar ordres a l'ordinador en el núvol.
+![IDE](https://cs50.harvard.edu/x/2023/notes/1/cs50Week1Slide017.png "IDE") Observeu que hi ha un  *explorador d'arxius* al costat esquerre on trobareu els vostres fitxers. A més, tingueu en compte que hi ha una regió al mig anomenada *text editor* on podreu editar el vostre programa. Finalment, hi ha una `interfície de línia d'ordres`, coneguda com a *CLI*, *command line* o *terminal*, on podem enviar ordres a l'ordinador en el núvol.
 
 - Podem construir el vostre primer programa en C escrivint `code hello.c` a la finestra del terminal. Observeu que hem abaixat deliberadament tot el nom del fitxer i inclòs l'extensió `.c`. Llavors, a l'editor de text que apareix, escriviu el codi de la manera següent:
 
