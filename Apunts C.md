@@ -1,7 +1,5 @@
-## [Benvingut!](https://cs50.harvard.edu/x/2023/notes/1/#welcome)
+## Introducció
 
-- A la sessió anterior, vam aprendre sobre Scratch, un llenguatge de programació visual.
-- De fet, tots els conceptes de programació essencials presentats a Scratch s'utilitzaran quan aprenguis a programar qualsevol llenguatge de programació.
 - Recorda que les màquines només entenen binaris. On els humans escriuen sourcecodi font., una llista d'instruccions per a l'ordinador que és llegible pels humans, les màquines només entenen el que ara podem anomenar .codi màquina.. Aquest codi màquina és un patró d'uns i zeros que produeix un efecte desitjat.
 - Resulta que podem convertir .source code. en `machine code` utilitzant una peça molt especial de programari anomenada .compiler.. Avui us presentarem a un compilador que us permetrà convertir el codi font en el llenguatge de programació .C. en codi màquina.
 - Avui, a més d'aprendre com codificar, aprendràs com escriure un bon codi.
