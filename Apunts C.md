@@ -1,7 +1,7 @@
 ## Introducció
 
 - Recorda que les màquines només entenen binaris. On els humans escriuen sourcecodi font., una llista d'instruccions per a l'ordinador que és llegible pels humans, les màquines només entenen el que ara podem anomenar .codi màquina.. Aquest codi màquina és un patró d'uns i zeros que produeix un efecte desitjat.
-- Resulta que podem convertir .source code. en `machine code` utilitzant una peça molt especial de programari anomenada .compiler.. Avui us presentarem a un compilador que us permetrà convertir el codi font en el llenguatge de programació .C. en codi màquina.
+- Resulta que podem convertir .source code. en `machine code` utilitzant una peça molt especial de programari anomenada "compiler". Avui us presentarem a un compilador que us permetrà convertir el codi font en el llenguatge de programació .C. en codi màquina.
 - Avui, a més d'aprendre com codificar, aprendràs com escriure un bon codi.
 - El codi es pot avaluar en tres eixos. En primer lloc, ,correctness_ es refereix a «executa el codi com es pretén?» En segon lloc, ”design_ es refereix a “com de bé està dissenyat el codi?” Finalment, ”style_ es refereix a "com d'estèticament agradable i coherent és el codi?"
 
