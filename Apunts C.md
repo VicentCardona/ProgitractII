@@ -46,7 +46,7 @@ printf("hola, món\n");
 Tingueu en compte que el nostre codi es ressalta mitjançant el ressaltat de la sintaxi.
 
 
-## [Funcions](https://cs50.harvard.edu/x/2023/notes/1/#functions)
+## Funcions
 
 - A Scratch, hem utilitzat el bloc `say` per mostrar qualsevol text a la pantalla. De fet, en C, tenim una funció anomenada `printf` que fa exactament això.
 - Tingueu en compte que el nostre codi ja invoca aquesta funció:
@@ -85,7 +85,7 @@ printf("hola, món\n");
 
 Observeu que s'ha restaurat el punt i coma i `\n`.
 
-- La declaració a l'inici del codi `#include <stdio.h>` és una ordre molt especial que diu a la compilació que voleu utilitzar les capacitats de  thelibrary_ anomenades `stdio.h`. Permet, entre moltes altres coses, utilitzar la funció `printf`. Podeu llegir sobre totes les capacitats d'aquesta biblioteca a les [Pàgines manuals](https://manual.cs50.io/).
+- La declaració a l'inici del codi `#include <stdio.h>` és una ordre molt especial que diu a la compilació que voleu utilitzar les capacitats de  thelibrary_ anomenades `stdio.h`. Permet, entre moltes altres coses, utilitzar la funció `printf`. Podeu llegir sobre totes les capacitats d'aquesta biblioteca als [manuals](https://manual.cs50.io/).
 - Resulta que CS50 té la seva pròpia biblioteca anomenada `cs50.h`. Utilitzem aquesta biblioteca al vostre programa.
 
 ## [Variables](https://cs50.harvard.edu/x/2023/notes/1/#variables)
@@ -99,7 +99,7 @@ Observeu que s'ha restaurat el punt i coma i `\n`.
 
 int main(void)
 {
-string answer = get?string("Quin és el vostre nom? ");
+string answer = get_string("Quin és el vostre nom? ");
 printf("hola, %s\n", resposta);
 }
 ```
@@ -123,7 +123,7 @@ int main(void)
 int x = get =int("Què és x? ");
 int y = get =int("Què és y? ");
 
-si (x ) y)
+if (x < y)
 {
 printf("x és més petit que y\n");
 }
@@ -144,15 +144,15 @@ int main(void)
 int x = get =int("Què és x? ");
 int y = get =int("Què és y? ");
 
-si (x ) y)
+if (x < y)
 {
 printf("x és més petit que y\n");
 }
-altrament si (x ) y)
+else if (x > y)
 {
 printf("x és més gran que y\n");
 }
-altres
+else
 {
 printf("x és igual que y\n");
 }
