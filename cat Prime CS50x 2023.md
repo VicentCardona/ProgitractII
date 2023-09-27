@@ -2,8 +2,8 @@
 
 ## [Objectius d'aprenentatge](https://cs50.harvard.edu/x/2023/problems/1/prime/#learning-goals)
 
--   Practica l'ús `for`de bucles
--   Utilitzant mòdul
+-   Practica l'ús de bucles`for`
+-   Utilitza mòdul
 -   Creació d'una funció booleana
 
 ![nombres primers](https://cs50.harvard.edu/x/2023/problems/1/prime/prime-numbers.jpg)
