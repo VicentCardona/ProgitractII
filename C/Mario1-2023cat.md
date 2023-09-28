@@ -1,4 +1,4 @@
-## [Començant](https://cs50.harvard.edu/x/2023/psets/1/mario/less/#getting-started)
+ ## [Començant](https://cs50.harvard.edu/x/2023/psets/1/mario/less/#getting-started)
 
 Obriu el [codi VS.](https://cs50.dev/)
 
@@ -14,13 +14,9 @@ seguit d'Enter per baixar un ZIP anomenat `mario-less.zip`al vostre espai de cod
 
 Ara executa
 
-per crear una carpeta anomenada `mario-less`. Ja no necessiteu el fitxer ZIP, així que podeu executar-lo
+per crear una carpeta anomenada `mario-less`. Ja no necessiteu el fitxer ZIP, així que podeu executar-lo i responeu amb "y" seguit d'Enter a la sol·licitud per eliminar el fitxer ZIP que heu baixat.
 
-i responeu amb "y" seguit d'Enter a la sol·licitud per eliminar el fitxer ZIP que heu baixat.
-
-Ara escriviu
-
-seguit d'Enter per moure't a (és a dir, obrir) aquest directori. La vostra sol·licitud ara hauria de semblar-se a la següent.
+Ara escriviu seguit d'Enter per moure't a (és a dir, obrir) aquest directori. La vostra sol·licitud ara hauria de semblar-se a la següent.
 
 Si tot ha tingut èxit, hauríeu d'executar
 
