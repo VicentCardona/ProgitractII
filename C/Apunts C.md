@@ -87,7 +87,7 @@ int main(void)
 
 Observeu que s'ha restaurat el punt i coma i `\n`.
 
-- La declaració a l'inici del codi `#include <stdio.h>` és una ordre molt especial que diu a la compilació que voleu utilitzar les capacitats de  thelibrary_ anomenades `stdio.h`. Permet, entre moltes altres coses, utilitzar la funció `printf`. Podeu llegir sobre totes les capacitats d'aquesta biblioteca als [manuals](https://manual.cs50.io/).
+- La declaració a l'inici del codi `#include <stdio.h>` és una ordre molt especial que diu a la compilació que voleu utilitzar les capacitats de la llibrería anomenada `stdio.h`. Aquesta permet, entre moltes altres coses, utilitzar la funció `printf`. Podeu llegir sobre totes les capacitats d'aquesta biblioteca als [manuals](https://manual.cs50.io/).
 - Resulta que CS50 té la seva pròpia biblioteca anomenada `cs50.h`. Utilitzem aquesta biblioteca al vostre programa.
 
 ## [Variables](https://cs50.harvard.edu/x/2023/notes/1/#variables)
@@ -101,14 +101,14 @@ Observeu que s'ha restaurat el punt i coma i `\n`.
 
 int main(void)
 {
-string resposta = get_string("Quin és el vostre nom? ");
-printf("hola, %s\n", resposta);
+    string resposta = get_string("Quin és el vostre nom? ");
+    printf("hola, %s\n", resposta);
 }
 ```
 
-Tingueu en compte que `#include <cs50.h>` s'ha afegit a la part superior del codi. La funció `get_string` s'utilitza per a obtenir una cadena de l'usuari. Després, la variable `answer` es passa a la funció `printf`. `%s` li diu a la funció `printf` que es prepari per rebre una `string`.
+Tingueu en compte que `#include <cs50.h>` s'ha afegit a la part superior del codi. La funció `get_string` s'utilitza per a obtenir una `string` de l'usuari, osiga, una cadena de caracters. Després, la variable `resposta` es passa a la funció `printf`. `%s` li diu a la funció `printf` que es prepari per rebre una `string`.
 
-- `answer` és un lloc de retenció especial que anomenem .variable.. `answer` és del tipus `string` i pot contenir qualsevol cadena dins. Hi ha molts .tipus de dades_, com `int`, `bool`, `char` i molts altres.
+- `resposta` és un lloc de retenció especial que anomenem *variable*. `resposta` és del tipus `string` i pot contenir qualsevol cadena dins. Hi ha molts *tipus de dades*, com `int`, `bool`, `char` i molts altres.
 - Executant `make hello` de nou a la finestra del terminal, podreu executar el programa escrivint `./hello`. El programa ara demana el vostre nom i després ho diu amb el vostre nom adjunt.
 
 ## [Condicionals](https://cs50.harvard.edu/x/2023/notes/1/#conditionals)
@@ -116,48 +116,48 @@ Tingueu en compte que `#include <cs50.h>` s'ha afegit a la part superior del cod
 - Un altre bloc de construcció que vas utilitzar a Scratch era el de .conditionals.. Per exemple, és possible que vulgueu fer una cosa si x és més gran que y. A més, potser voldreu fer alguna cosa més si no es compleix aquesta condició.
 - A la finestra del terminal, escriviu `code compare.c` i escriviu el codi de la manera següent:
 
-```
+```C
 #include <cs50.h>
 #include <stdio.h>
 
 int main(void)
 {
-int x = get =int("Què és x? ");
-int y = get =int("Què és y? ");
+    int x = get =int("Què és x? ");
+    int y = get =int("Què és y? ");
 
-if (x < y)
-{
-printf("x és més petit que y\n");
-}
+    if (x < y)
+    {
+        printf("x és més petit que y\n");
+    }
 }
 ```
 
-Observeu que creem dues variables, una `int` o un enter anomenat `x` i una altra anomenada `y`. Els valors d'aquests estan poblats utilitzant la funció `get_int`.
+Observeu que creem dues variables, una `int` o un enter anomenat `x` i una altra anomenada `y`. Els valors d'aquests s'obtenen utilitzant la funció `get_int`.
 
 - Podeu executar el codi executant `make compare` a la finestra del terminal, seguit de `./compare`. Si obteniu algun missatge d'error, comproveu el codi per als errors.
-- Podem millorar el vostre programa codificant de la manera següent:
+- Podem millorar el vostre programa programant de la manera següent:
 
-```
+```C
 #include <cs50.h>
 #include <stdio.h>
 
 int main(void)
 {
-int x = get =int("Què és x? ");
-int y = get =int("Què és y? ");
+    int x = get =int("Què és x? ");
+    int y = get =int("Què és y? ");
 
-if (x < y)
-{
-printf("x és més petit que y\n");
-}
-else if (x > y)
-{
-printf("x és més gran que y\n");
-}
-else
-{
-printf("x és igual que y\n");
-}
+    if (x < y)
+    {
+        printf("x és més petit que y\n");
+    }
+    else if (x > y)
+    {
+        printf("x és més gran que y\n");
+    }
+        else
+   { 
+        printf("x és igual que y\n");
+   }
 }
 ```
 
@@ -166,28 +166,28 @@ Observeu que ara es tenen en compte tots els resultats potencials.
 - Pots tornar a fer i executar el teu programa i provar-lo.
 - Considerant un altre tipus de dades anomenat `char`, podem iniciar un programa nou escrivint `code agree.c` a la finestra del terminal. A l'editor de text, escriviu el codi de la manera següent:
 
-```
+```C
 #include <cs50.h>
 #include <stdio.h>
 
 int main(void)
 {
-// Demana a l'usuari que accepti
-char c = get =char("Esteu d'acord? ");
+    // Demana a l'usuari que accepti
+    char c = get_char("Esteu d'acord? ");
 
-// Comprova si hi ha acord
-si (c == 'Y' ) c == 'y')
-{
-printf("D'acord.\n");
-}
-altrament si (c == 'N' ) c == 'n')
-{
-printf("No acordat.\n");
-}
+    // Comprova si hi ha acord
+    if (c == 'Y' || c == 'y')
+    {
+        printf("D'acord.\n");
+    } 
+    else if (c == 'N' ) c == 'n')
+    {
+        printf("No acordat.\n");
+    }
 }
 ```
 
-Tingueu en compte que les cometes simples s'utilitzen per a caràcters individuals. A més, cal tenir en compte que `==` assegura que alguna cosa .és igual_ a una altra cosa, on un únic signe igual tindria una funció molt diferent en C. Finalment, cal tenir en compte que `=` significa efectivament .or..
+Tingueu en compte que les cometes simples s'utilitzen per a caràcters individuals. A més, cal tenir en compte que `==` assegura que alguna cosa *és igual* a una altra cosa, on un únic signe igual tindria una funció molt diferent en C. Finalment, cal tenir en compte que `=` significa atribució..
 
 - Podeu provar el codi escrivint `make agree` a la finestra del terminal, seguit de `./agree`.
 
