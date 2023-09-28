@@ -3,7 +3,7 @@
 ## Introducció
 
 - Recorda que les màquines només entenen binaris. On els humans escriuen `codi font`, una llista d'instruccions per a l'ordinador que és llegible pels humans, les màquines només entenen el que ara podem anomenar `codi màquina`. Aquest codi màquina és un patró d'uns i zeros que produeix un efecte desitjat.
-- Resulta que podem convertir .source code. en `machine code` utilitzant una peça molt especial de programari anomenada `compilador`. Avui us presentarem a un compilador que us permetrà convertir el codi font en el llenguatge de programació `C` en codi màquina.
+- Resulta que podem convertir .source code. en `machine code` utilitzant una peça molt especial de programari anomenada `compilador`. Avui us presentarem un compilador que us permetrà convertir el codi font en el llenguatge de programació `C` en codi màquina.
 - Avui, a més d'aprendre com programar, aprendràs com escriure un bon codi.
 - El codi es pot avaluar en tres eixos:
  * En primer lloc, **correcció** es refereix a «executa el codi com es pretén?» 
@@ -95,13 +95,13 @@ Observeu que s'ha restaurat el punt i coma i `\n`.
 - Recordeu que a Scratch, vam tenir l'habilitat de preguntar a l'usuari "Què és el vostre nom?" i dir "hola" amb aquest nom afegit.
 - En C, podem fer el mateix. Modifica el codi de la manera següent:
 
-```
+```C
 #include <cs50.h>
 #include <stdio.h>
 
 int main(void)
 {
-string answer = get_string("Quin és el vostre nom? ");
+string resposta = get_string("Quin és el vostre nom? ");
 printf("hola, %s\n", resposta);
 }
 ```
