@@ -21,12 +21,12 @@
 
 - Podem construir el vostre primer programa en C escrivint `code hello.c` a la finestra del terminal. Observeu que hem abaixat deliberadament tot el nom del fitxer i inclòs l'extensió `.c`. Llavors, a l'editor de text que apareix, escriviu el codi de la manera següent:
 
-```
+```C
 #include <stdio.h>
 
 int main(void)
 {
-printf("hola, món\n");
+    printf("hola, món\n");
 }
 ```
 
@@ -36,12 +36,12 @@ Tingueu en compte que cada caràcter anterior serveix un propòsit. Si l'escrivi
 - Ara, obre el  explorerfile explorer. a l'esquerra. Observareu que ara hi ha un fitxer anomenat `hello.c` i un altre anomenat `hello`. El compilador pot llegir `hello.c`: és on s'emmagatzema el codi. `hello` és un fitxer executable que podeu executar, però el compilador no el pot llegir.
 - Mirem el nostre codi amb més cura:
 
-```
+```C
 #include <stdio.h>
 
 int main(void)
 {
-printf("hola, món\n");
+    printf("hola, món\n");
 }
 ```
 
@@ -53,7 +53,7 @@ Tingueu en compte que el nostre codi es ressalta mitjançant el ressaltat de la 
 - A Scratch, hem utilitzat el bloc `say` per mostrar qualsevol text a la pantalla. De fet, en C, tenim una funció anomenada `printf` que fa exactament això.
 - Tingueu en compte que el nostre codi ja invoca aquesta funció:
 
-```
+```C
 printf("hola, món\n");
 ```
 
@@ -61,27 +61,27 @@ Tingueu en compte que s'anomena la funció printf. L'argument passat a printf é
 
 - Un error comú en la programació C és l'omissió d'un punt i coma. Modifica el codi de la manera següent:
 
-```
+```C
 #include <stdio.h>
 
 int main(void)
 {
-printf("hola, món\n")
+    printf("hola, món\n")
 }
 ```
 
 Observeu que el punt i coma ja no existeix.
 
 - A la finestra del terminal, executeu `make hello`. Ara es trobaran amb nombrosos errors! Col·loqueu el punt i coma de nou en la posició correcta i torneu a executar `make hello`, els errors desapareixeran.
-- Observeu també el símbol especial `\n` en el codi. Proveu d'eliminar aquests caràcters i tornar a fer `.making_ el vostre programa executant `make hello`. S'està escrivint `./hello` a la finestra del terminal, com ha canviat el vostre programa?
+- Observeu també el símbol especial `\n` en el codi. Proveu d'eliminar aquests caràcters i tornar a fer el vostre programa executant `make hello`. Escriu `./hello` a la finestra del terminal, com ha canviat el vostre programa?
 - Restaura el programa al següent:
 
-```
+```C 
 #include <stdio.h>
 
 int main(void)
 {
-printf("hola, món\n");
+    printf("hola, món\n");
 }
 ```
 
