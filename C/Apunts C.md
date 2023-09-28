@@ -1,3 +1,5 @@
+# Apunts C
+
 ## Introducció
 
 - Recorda que les màquines només entenen binaris. On els humans escriuen `codi font`, una llista d'instruccions per a l'ordinador que és llegible pels humans, les màquines només entenen el que ara podem anomenar `codi màquina`. Aquest codi màquina és un patró d'uns i zeros que produeix un efecte desitjat.
