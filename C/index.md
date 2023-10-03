@@ -17,5 +17,5 @@ Per als que us sentiu més còmodes, podeu provar directament amb el problema Ma
 
 ### Problema 2 Efectiu - Crèdit
 
-[Problema Efectiu(cat)](https://vicentcardona.github.io/ProgitractII/C/Efectiu-2023cat.html)
+[Problema Efectiu(cat)](https://vicentcardona.github.io/ProgitractII/C/Efectiu-2023cat.html)  
 [Problema Efectiu(en)](https://vicentcardona.github.io/ProgitractII/C/Cash%-2023en.html)
