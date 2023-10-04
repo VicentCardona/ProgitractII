@@ -1,6 +1,7 @@
 # Situació d'aprenentatge C
 ## Continguts
 [Apunts C](https://vicentcardona.github.io/ProgitractII/C/Apunts%20C.html)
+[Apunts Arrays](https://vicentcardona.github.io/ProgitractII/C/Apunts%20Arrays%20CAT.html)
 ## Poblemes
 
 ### Problema1 - Mario
