@@ -2,17 +2,19 @@
 
 ## [Bombetes no tan trencades](https://cs50.harvard.edu/x/2023/psets/2/bulbs/#not-so-broken-light-bulbs)
 
-A la conferència, potser us heu adonat del que semblava un "error" a la part davantera de l'escenari, en què algunes de les bombetes sempre semblen apagades:
 
 ![captura de pantalla de la conferència de la setmana 2 amb tira de bombetes](https://cs50.harvard.edu/x/2023/psets/2/bulbs/binary_bulbs.jpg)
 
-Cada seqüència de bombetes, però, codifica un missatge en _binari_ , l'idioma que els ordinadors "parlen". Escrivim un programa per fer missatges secrets propis, potser que fins i tot podríem posar en escena!
+Cada seqüència de bombetes, apagades i enceses codifica un missatge en _binari_ , l'idioma que els ordinadors "parlen". L'objectiu d'aquest programa seria fer missatges secrets.
 
 ## [Començant](https://cs50.harvard.edu/x/2023/psets/2/bulbs/#getting-started)
 
 Obriu el [codi VS.](https://cs50.dev/)
 
-Comenceu fent clic dins de la finestra de la vostra terminal i, a continuació, executeu `cd`\-lo sol. Hauríeu de trobar que la seva "indicació" s'assembla a la següent.
+Comenceu fent clic dins de la finestra de la vostra terminal i, a continuació, executeu `cd`, sense res. Hauríeu de trobar que la seva "indicació" s'assembla a la següent.
+```
+$
+```
 
 Feu clic dins d'aquesta finestra de terminal i, a continuació, executeu
 
@@ -20,35 +22,46 @@ Feu clic dins d'aquesta finestra de terminal i, a continuació, executeu
 wget https://cdn.cs50.net/2022/fall/psets/2/bulbs.zip
 ```
 
-seguit d'Enter per baixar un ZIP anomenat `bulbs.zip`al vostre espai de codi. Aneu amb compte de no passar per alt l'espai entre `wget`i l'URL següent, o qualsevol altre caràcter!
+seguit, premeu enter per baixar un ZIP anomenat `bulbs.zip`al vostre espai de codi. Aneu amb compte de no passar per alt l'espai entre `wget`i l'URL següent, o qualsevol altre caràcter!
 
 Ara executa
+```
+unzip bulbs.zip
+```
 
-per crear una carpeta anomenada `bulbs`. Ja no necessiteu el fitxer ZIP, així que podeu executar-lo
-
+per crear una carpeta anomenada `bulbs`. Ja no necessiteu el fitxer ZIP, així que podeu executar
+```
+rm  bulbs.zip
+```
 i responeu amb "y" seguit d'Enter a la sol·licitud per eliminar el fitxer ZIP que heu baixat.
 
 Ara escriviu
-
+```
+cd bulbs
+```
 seguit d'Enter per moure't a (és a dir, obrir) aquest directori. La vostra sol·licitud ara hauria de semblar-se a la següent.
+```
+bulbs/$
+```
+Si tot ha anat be, hauríeu d'executar
+```
+ls
+```
+i veureu un fitxer anomenat `bulbs.c`. L'execució `code bulbs.c`hauria d'obrir el fitxer on escriureu el codi per a aquest problema. Si no, torna sobre els teus passos i mira si pots determinar on t'has equivocat!
 
-Si tot va tenir èxit, hauríeu d'executar
-
-i vegeu un fitxer anomenat `bulbs.c`. L'execució `code bulbs.c`hauria d'obrir el fitxer on escriureu el codi per a aquest conjunt de problemes. Si no, torna sobre els teus passos i mira si pots determinar on t'has equivocat!
-
-## [Detalls d'implementació](https://cs50.harvard.edu/x/2023/psets/2/bulbs/#implementation-details)
+## Detalls d'implementació
 
 Per escriure el nostre programa, primer haurem de pensar en **les bases** .
 
-### [Els bàsics](https://cs50.harvard.edu/x/2023/psets/2/bulbs/#the-basics)
+### Les bases
 
-La _base_ més simple és la base-1, o _unaria_ ; per escriure un nombre, _N_ , en base 1, simplement escriurem _N_ s consecutives `1`. Així, el nombre `4`en base 1 s'escriuria com a `1111`, i el nombre `12`com a `111111111111`. Penseu en això com comptar amb els dits o comptar una puntuació amb marques en un tauler.
+La _base_ més simple és la base-1, o _unaria_ ; per escriure un nombre, _N_ , en base 1, simplement escriurem _N_ `1`s consecutius. Així, el nombre `4`en base 1 s'escriuria com a `1111`, i el nombre `12`com a `111111111111`. Penseu en això com comptar amb els dits o comptar una puntuació amb marques en un tauler.
 
-Podeu veure per què la base-1 no s'utilitza gaire avui dia. (Els números es fan bastant llargs!) En canvi, una convenció comuna és la base 10, o _decimal_ . En base 10, cada _dígit_ es multiplica per una potència de 10, per tal de representar nombres més grans. Per exemple, \\(123\\) és l'abreviatura de \\(123 = 1 \\cdot 10^2 + 2 \\cdot 10^1 + 3 \\cdot 10^0\\).
+Podeu veure per què la base-1 no s'utilitza gaire avui dia. (Els números es fan bastant llargs!) En canvi, una convenció comuna és la base 10, o _decimal_ . En base 10, cada _dígit_ es multiplica per una potència de 10, per tal de representar nombres més grans. Per exemple, `123` és l'abreviatura de $123 = 1 \cdot 10^2 + 2 \cdot 10^1 + 3 \cdot 10^0$.
 
-Canviar la base és tan senzill com canviar el \\(10\\) anterior per un nombre diferent. Per exemple, si heu escrit `123`en base 4, el nombre que realment estaries escrivint és \\(123 = 1 \\cdot 4^2 + 2 \\cdot 4^1 + 3 \\cdot 4^0\\), que és igual al nombre decimal \\(27\\).
+Canviar la base és tan senzill com canviar el $10$ anterior per un nombre diferent. Per exemple, si heu escrit `123`en base 4, el nombre que realment estaries escrivint és $123 = 1 \cdot 4^2 + 2 \cdot 4^1 + 3 \cdot 4^0$, que és igual al nombre decimal $27$.
 
-Els ordinadors, però, utilitzen base-2 o _binary_ . En binari, escriure `123`seria un error, ja que els nombres binaris només poden tenir `0`s i `1`s. Però el procés d'esbrinar exactament quin nombre decimal representa un nombre binari és exactament el mateix. Per exemple, el nombre `10101`en base 2 representa \\(1 \\cdot 2^4 + 0 \\cdot 2^3 + 1 \\cdot 2^2 + 0 \\cdot 2^1 + 1 \\cdot 2^0\\), que és igual al nombre decimal \\(21\\).
+Els ordinadors, però, utilitzen base-2 o _binary_ . En binari, escriure `123`seria un error, ja que els nombres binaris només poden tenir `0`s i `1`s. Però el procés d'esbrinar exactament quin nombre decimal representa un nombre binari és exactament el mateix. Per exemple, el nombre `10101`en base 2 representa $1 \cdot 2^4 + 0 \cdot 2^3 + 1 \cdot 2^2 + 0 \cdot 2^1 + 1 \cdot 2^0$, que és igual al nombre decimal $21$.
 
 ### [Codificació d'un missatge](https://cs50.harvard.edu/x/2023/psets/2/bulbs/#encoding-a-message)
 
