@@ -63,20 +63,27 @@ Canviar la base és tan senzill com canviar el $10$ anterior per un nombre difer
 
 Els ordinadors, però, utilitzen base-2 o _binary_ . En binari, escriure `123`seria un error, ja que els nombres binaris només poden tenir `0`s i `1`s. Però el procés d'esbrinar exactament quin nombre decimal representa un nombre binari és exactament el mateix. Per exemple, el nombre `10101`en base 2 representa $1 \cdot 2^4 + 0 \cdot 2^3 + 1 \cdot 2^2 + 0 \cdot 2^1 + 1 \cdot 2^0$, que és igual al nombre decimal $21$.
 
-### [Codificació d'un missatge](https://cs50.harvard.edu/x/2023/psets/2/bulbs/#encoding-a-message)
+### Codificació d'un missatge
 
-Les bombetes només poden estar enceses o apagues. En altres paraules, les bombetes representen dos estats possibles; o la bombeta està encesa o la bombeta està apagada, de la mateixa manera que els nombres binaris són 1 o 0. Haurem de trobar una manera de codificar el text com una seqüència de nombres binaris.
+Les bombetes només poden estar enceses o apagades. En altres paraules, les bombetes representen dos estats possibles; o la bombeta està encesa o la bombeta està apagada, de la mateixa manera que els nombres binaris són 1 o 0. Haurem de trobar una manera de codificar el text com una seqüència de nombres binaris.
 
 Escrivim un programa anomenat `bulbs`que pren un missatge i el converteix en un conjunt de bombetes que podríem mostrar a un públic desprevingut. Ho farem en dos passos:
 
 -   El primer pas consisteix a convertir el text en nombres decimals. Suposem que volem codificar el missatge `HI!`. Afortunadament, ja tenim una convenció establerta sobre com fer-ho, [ASCII](https://asciitable.com/) . Observeu que `H`es representa amb el nombre decimal `72`, `I`es representa amb `73`, i `!`es representa per `33`.
 -   El següent pas consisteix a prendre els nostres números decimals (com ara `72`, `73`, i `33`) i convertir-los en nombres binaris equivalents, que només utilitzen 0 i 1. Per tal de tenir un nombre consistent de bits en cadascun dels nostres nombres binaris, suposem que cada decimal es representa amb 8 bits. `72`és `01001000`, `73`és `01001001`i `33`és `00100001`.
 
-Finalment, interpretarem aquests nombres binaris com a instruccions per a les bombetes de l'escenari; 0 està apagat, 1 està activat. (Trobareu que `bulbs.c`inclou una `print_bulb`funció que s'ha implementat per a vosaltres, que inclou un `0`o `1`i emet emoji que representen bombetes.)
+Finalment, interpretarem aquests nombres binaris com a instruccions per a unes bombetes; 0 està apagat, 1 està activat. (Trobareu que `bulbs.c`inclou una funció `print_bulb` que s'ha implementat per a vosaltres, que inclou un `0`o `1`i emet emoji que representen bombetes.)
 
-Aquí teniu un exemple de com podria funcionar el programa completat. A diferència de l'etapa Sanders, imprimirem un byte per línia per a més claredat.
+Aquí teniu un exemple de com podria funcionar el programa completat. Imprimirem un byte per línia per a més claredat.
+```
+# ./bulbs
+Message: HI!
+⚫🟡⚫⚫🟡⚫⚫⚫
+⚫🟡⚫⚫🟡⚫⚫🟡
+⚫⚫🟡⚫⚫⚫⚫🟡
+```
 
-Per comprovar el nostre treball, podem llegir una bombeta que està encesa ( ![🟡](https://twemoji.maxcdn.com/v/14.0.2/72x72/1f7e1.png)) com a `1`i una bombeta que està apagada ( ![⚫](https://twemoji.maxcdn.com/v/14.0.2/72x72/26ab.png)) com a `0`. Llavors es `HI!`va convertir
+Per comprovar el nostre treball, podem llegir una bombeta que està encesa ( ![🟡](https://twemoji.maxcdn.com/v/14.0.2/72x72/1f7e1.png)) com a `1`i una bombeta que està apagada ( ![⚫](https://twemoji.maxcdn.com/v/14.0.2/72x72/26ab.png)) com a `0`. Llavors es `HI!` es converteix
 
 ```
 01001000
@@ -87,6 +94,18 @@ Per comprovar el nostre treball, podem llegir una bombeta que està encesa ( ![�
 que és precisament el que esperàvem.
 
 Un altre exemple:
+
+```
+$./bulbs
+Message: HI MOM
+⚫🟡⚫⚫🟡⚫⚫⚫
+⚫🟡⚫⚫🟡⚫⚫🟡
+⚫⚫🟡⚫⚫⚫⚫⚫
+⚫🟡⚫⚫🟡🟡⚫🟡
+⚫🟡⚫⚫🟡🟡🟡🟡
+⚫🟡⚫⚫🟡🟡⚫🟡
+```
+
 
 Tingueu en compte que tots els caràcters s'inclouen a les instruccions de la bombeta, inclosos els caràcters no alfabètics com els espais ( `00100000`).
 
