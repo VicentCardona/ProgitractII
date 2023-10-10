@@ -23,4 +23,4 @@ Per als que us sentiu més còmodes, podeu provar directament amb el problema Ma
 
 ## Problema Arrays1 Bombetes
 
-[Problema bombetes(cat)](https://vicentcardona.github.io/ProgitractII/C/bombetes-2023cat.html)  
+[Problema bombetes(cat)](https://vicentcardona.github.io/ProgitractII/C/Bombetes-2023cat.html)  
