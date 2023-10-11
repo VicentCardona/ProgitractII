@@ -1,13 +1,13 @@
-## [Bombetes](https://cs50.harvard.edu/x/2023/psets/2/bulbs/#bulbs)
 
-## [Bombetes no tan trencades](https://cs50.harvard.edu/x/2023/psets/2/bulbs/#not-so-broken-light-bulbs)
+
+## Bombetes no tan trencades
 
 
 ![captura de pantalla de la conferència de la setmana 2 amb tira de bombetes](https://cs50.harvard.edu/x/2023/psets/2/bulbs/binary_bulbs.jpg)
 
 Cada seqüència de bombetes, apagades i enceses codifica un missatge en _binari_ , l'idioma que els ordinadors "parlen". L'objectiu d'aquest programa seria fer missatges secrets.
 
-## [Començant](https://cs50.harvard.edu/x/2023/psets/2/bulbs/#getting-started)
+## Començant
 
 Obriu el [codi VS.](https://cs50.dev/)
 
@@ -109,46 +109,51 @@ Message: HI MOM
 
 Tingueu en compte que tots els caràcters s'inclouen a les instruccions de la bombeta, inclosos els caràcters no alfabètics com els espais ( `00100000`).
 
-## [Especificació](https://cs50.harvard.edu/x/2023/psets/2/bulbs/#specification)
+## Especificació
 
-Dissenyeu i implementeu un programa, `bulbs`, que converteixi el text en instruccions per a la tira de bombetes a l'escenari del CS50 de la següent manera:
-
+Dissenyeu i implementeu un programa, `bulbs`, que converteixi el text en instruccions per a la tira de bombetes de la següent manera.
 -   Implementeu el vostre programa en un fitxer anomenat `bulbs.c`.
 -   El vostre programa primer ha de demanar un missatge a l'usuari amb `get_string`.
 -   Aleshores, el vostre programa ha de convertir el donat `string`en una sèrie de nombres binaris de 8 bits, un per a cada caràcter de la cadena.
--   Podeu utilitzar la `print_bulb`funció proporcionada per imprimir una sèrie de `0`s i `1`s com una sèrie d'emojis grocs i negres, que representen bombetes encès i apagat.
--   Cada "byte" de 8 símbols s'hauria d'imprimir en la seva pròpia línia quan es produeixi; `\n`també hi hauria d'haver un després de l'últim "byte" de 8 símbols.
+-   Podeu utilitzar la funció `print_bulb` proporcionada per imprimir una sèrie de `0`s i `1`s com una sèrie d'emojis grocs i negres, que representen bombetes encès i apagat.
+-   Cada "byte" de 8 símbols s'hauria d'imprimir en la seva pròpia línia; haurà d'haver un `\n`després de cada darrer "byte" de 8 simbols.
+<details>
+<summary> Pistes per a decimal a binari</summary>
+<br>
+Farem un exemple amb el nombre 4. Com convertiríeu 4 en binari? Comenceu tenint en compte el bit més a la dreta, el que, si està activat, afegeix 1 al nombre que estem representant. Necessites aquest bit per estar en 1? Dividiu 4 per 2 per esbrinar:
 
-Suggeriments per a decimal a binari
-
-Passem per un exemple amb el número 4. Com convertiríeu 4 en binari? Comenceu tenint en compte el bit més a la dreta, el que, si està activat, afegeix 1 al nombre que estem representant. Necessites aquest bit per estar encès? Dividiu 4 per 2 per esbrinar:
-
-\\\[4 / 2 = 2\\\]
+$4 / 2 = 2$
 
 2 es divideix uniformement en 4, la qual cosa ens indica que no hi ha cap resta d'1 de què preocupar-se. Podem deixar aquesta part més dreta apagada amb seguretat, aleshores:
 
-What about the preceding bit, now, the one just the left of this bit we discovered? To check, let’s follow a similar process, but pick up where we left off. In the previous step, we divided 4 by 2 and got 2. Now, does 2 divide evenly into 2? It does, so there’s no remainder of 2 to worry about:
+```
+0
+```
 
-Let’s continue further still. After dividing 2 by 2, we’re left with 1. Diving 1 by 2 leaves a remainder of 1. That means we’ll need to turn this bit on:
+Que hi ha del següent bit ara? el que està just a l'esquerra del que hem descovert? Per comprovar, anem a seguir un procès similar, pero agafant-ho des d'on ho hem deixat... en el pas anterior, hem dividit 4 per 2 i hem obtingut 2. Ara, 2 es divideix per igual en 2? ho fa, així que no hi ha resta de 2 que ens preocupi:
+```
+00
+```
+Ara continuem una mica més. Desprès de dividir 2 per 2, ens queda 1. Dividint 1 per 2 queda una resta d'1. Això vol dir que necessitarem "encendre" aquest bit:
+```
+100
+```
+Ara, que hem dividit el nostre nombre fins a 0, no necesite més bits per a representar. Donat conta que hem descovert els bits que representen 4, en l'ordre oposat en el que els imprimim... necesitarem una estructura que ens guardi aquests bits per a poder-los imprimir més endavant.Per suposat, en el vostre codi haureu de treballar amb 'char's de 8 bit, així que hauras de calcular cada 0.
 
-I ara que hem dividit el nostre nombre a 0, no necessitem més bits per representar-lo. Observeu que hem descobert els bits per representar 4 en l'ordre oposat en què hem d'imprimir-los: probablement necessitarem una estructura que ens permeti emmagatzemar aquests bits, de manera que els puguem imprimir més endavant. I, per descomptat, al vostre codi real, treballareu amb `char`s de 8 bits, de manera que voldreu anteposar els 0 necessaris.
+Quan comprovem les restes, el l'operador de mòdul('%') ens es molt útil! '4%2', per exemple, retorna 0, el que vol dir que 2 dividit entre 4 te una resta de 0.
+</details>
+## Com provar el vostre codi
 
-Quan comproveu les restes, l' `%`operador mòdul ( ) pot ser útil! `4 % 2`, per exemple, retorna 0, el que significa que 2 es divideix en 4 amb un restant de 0.
-
-## [Com provar el vostre codi](https://cs50.harvard.edu/x/2023/psets/2/bulbs/#how-to-test-your-code)
-
-El vostre programa hauria de comportar-se segons els exemples anteriors. Podeu comprovar el vostre codi mitjançant `check50`, un programa que CS50 utilitzarà per provar el vostre codi quan l'envieu, escrivint el següent a la `$`sol·licitud. Però assegureu-vos de provar-ho vosaltres mateixos també!
+El vostre programa hauria de comportar-se segons els exemples anteriors. Podeu comprovar el vostre codi mitjançant `check50`, un programa que CS50 utilitzarà per provar el vostre codi quan l'envieu, escrivint el següent al terminal. Però assegureu-vos de provar-ho vosaltres mateixos també!
 
 ```
 check50 cs50/problems/2023/x/bulbs
 ```
 
-Per avaluar l'estil del vostre codi, escriviu el següent a l' `$`indicador.
-
-## [Com enviar](https://cs50.harvard.edu/x/2023/psets/2/bulbs/#how-to-submit)
-
-Al vostre terminal, executeu el següent per enviar el vostre treball.
-
+Per avaluar l'estil del vostre codi, escriviu el següent al terminal:
 ```
-submit50 cs50/problems/2023/x/bulbs
+style50 bulbs.c
 ```
+
+## Com enviar
+Entrega al classroom captura d'haver complert la prova 'check50' i entrega el programa.
