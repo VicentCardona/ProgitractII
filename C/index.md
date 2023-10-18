@@ -1,4 +1,4 @@
-# Situació d'aprenentatge C
+# S.A.1 - Baixem el nivell. El llenguatge C
 ## Continguts
 [Apunts C](https://vicentcardona.github.io/ProgitractII/C/Apunts%20C.html)  
 [Apunts Arrays](https://vicentcardona.github.io/ProgitractII/C/Apunts%20Arrays%20CAT.html)
