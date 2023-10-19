@@ -27,6 +27,6 @@ Per als que us sentiu més còmodes, podeu provar directament amb el problema Ma
 [Problema bombetes(cat)](https://vicentcardona.github.io/ProgitractII/C/Bombetes-2023cat.html)  
 
 ### A2 Llegibilitat
-[Problema llegibilitat(cat)](https://vicentcardona.github.io/ProgitractII/C/[Llegibilitat-2023cat.html])
+[Problema llegibilitat(cat)](https://vicentcardona.github.io/ProgitractII/C/Llegibilitat-2023cat.html)
 
 
