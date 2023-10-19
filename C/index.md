@@ -21,6 +21,12 @@ Per als que us sentiu més còmodes, podeu provar directament amb el problema Ma
 [Problema Efectiu(cat)](https://vicentcardona.github.io/ProgitractII/C/Efectiu-2023cat.html)  
 [Problema Efectiu(en)](https://vicentcardona.github.io/ProgitractII/C/Cash%-2023en.html)
 
-## Problema Arrays1 Bombetes
+## Problema Arrays
+### A1 Bombetes
 
 [Problema bombetes(cat)](https://vicentcardona.github.io/ProgitractII/C/Bombetes-2023cat.html)  
+
+### A2 Llegibilitat
+[Problema llegibilitat(cat)](https://vicentcardona.github.io/ProgitractII/C/[Llegibilitat-2023cat.html])
+
+
