@@ -1,43 +1,33 @@
-## [Conferència 3](https://cs50.harvard.edu/x/2023/notes/3/#lecture-3)
+# Algorismes
 
--   [Benvingut!](https://cs50.harvard.edu/x/2023/notes/3/#welcome)
--   [Algorismes](https://cs50.harvard.edu/x/2023/notes/3/#algorithms)
--   [Temps d'execució](https://cs50.harvard.edu/x/2023/notes/3/#running-time)
--   [Cerca lineal i binària](https://cs50.harvard.edu/x/2023/notes/3/#linear-and-binary-search)
--   [Estructures de dades](https://cs50.harvard.edu/x/2023/notes/3/#data-structures)
--   [Classificació](https://cs50.harvard.edu/x/2023/notes/3/#sorting)
--   [Recursió](https://cs50.harvard.edu/x/2023/notes/3/#recursion)
--   [Fusionar Ordenar](https://cs50.harvard.edu/x/2023/notes/3/#merge-sort)
--   [Resumint](https://cs50.harvard.edu/x/2023/notes/3/#summing-up)
+## Benvingut!
 
-## [Benvingut!](https://cs50.harvard.edu/x/2023/notes/3/#welcome)
-
--   A la setmana zero, vam introduir la idea d'un _algorisme_ .
+-   Al començament del curs, vam introduir la idea d'un *algorisme* .
 -   Aquesta setmana, ampliarem la nostra comprensió dels algorismes a través del pseudocodi i en el propi codi.
--   A més, anem a considerar l'eficiència d'aquests algorismes. De fet, anirem construint sobre la nostra comprensió de com utilitzar alguns dels conceptes _de nivell inferior_ que vam parlar la setmana passada per crear algorismes.
+-   A més, anem a considerar l'eficiència d'aquests algorismes. De fet, anirem construint sobre la nostra comprensió de com utilitzar alguns dels conceptes *de nivell inferior* que hem estat treballant per crear algorismes.
 
-## [Algorismes](https://cs50.harvard.edu/x/2023/notes/3/#algorithms)
+## Algorismes
 
--   Recordeu que la setmana passada us van presentar la idea d'una _matriu_ , blocs de memòria que estan al costat de l'altre.
--   Podeu imaginar metafòricament una matriu com una sèrie de set armariets vermells de la següent manera:
+-   Recordeu que previament us van presentar la idea d'una *matriu* , blocs de memòria que estan un al costat de l'altre.
+-   Podeu imaginar metafòricament una *array* com una sèrie de set armariets vermells de la següent manera:
     
     ![Set taquilles vermelles una al costat de l'altra](https://cs50.harvard.edu/x/2023/notes/3/cs50Week3Slide018.png "taquilles")
     
--   Ens podem imaginar que tenim un problema essencial de voler saber: "El número 50 està dins d'una matriu?"
--   Potencialment podem lliurar la nostra matriu a un algorisme, en el qual el nostre algorisme cercarà a través dels nostres armariets per veure si el número 50 està darrere d'una de les portes: retornant el valor vertader o fals.
+-   Ens podem imaginar que tenim el problema essencial de voler saber: "El número 50 està dins d'una *array*?"
+-   Potencialment podem facilitar la nostra *array* a un algorisme, en el qual aquest cercarà a través dels nostres armariets per veure si el número 50 està darrere d'una de les portes: retornant el valor vertader o fals.
     
     ![set taquilles vermelles apuntant a una caixa buida.  De la caixa buida surt i la sortida de bool](https://cs50.harvard.edu/x/2023/notes/3/cs50Week3Slide022.png "taquilles com a algorisme")
     
 -   Podem imaginar diverses instruccions que podem proporcionar al nostre algorisme per dur a terme aquesta tasca de la següent manera:
     
     ```
-    For each door from left to right
-        If 50 is behind door
-            Return true
-    Return false
+    Per a cada porta d'esquerra a dreta
+        Si 50 està darrera la porta
+            Retorna "true"
+    Retorna false
     ```
     
-    Tingueu en compte que les instruccions anteriors s'anomenen _pseudocodi_ : una versió llegible per l'home de les instruccions que podríem proporcionar a l'ordinador.
+    Tingueu en compte que les instruccions anteriors s'anomenen *pseudocodi* : una versió llegible per l'home de les instruccions que podríem proporcionar a l'ordinador.
     
 -   Un informàtic podria traduir aquest pseudocodi de la següent manera:
     
@@ -50,18 +40,18 @@
     
     Tingueu en compte que l'anterior encara no és codi, però és una aproximació força propera a com podria semblar el codi final.
     
--   _La cerca binària_ és un _algorisme de cerca_ que es podria utilitzar en la nostra tasca de trobar el 50.
+-   *La cerca binària* és un *algorisme de cerca* que es podria utilitzar en la nostra tasca de trobar el 50.
 -   Suposant que els valors dins dels armariets s'han organitzat de més petit a més gran, el pseudocodi per a la cerca binària apareixerà de la següent manera:
     
     ```
-    If there are no doors
-        Return false
-    If 50 is behind middle door
-        Return true
-    Else if 50 < middle door
-        Search left half
-    Else if 50 > middle door
-        Search right half
+    Si no hi ha cap porta
+        Retorna "false"
+    Si 50 està darrera la porta d'enmig
+        Retorna "true"
+    "Else" si 50 < la porta d'enmig
+        busca a la meitat esquerra
+    "Else" si 50 > la porta d'enmig
+        busca a la meitat dreta
     ```
     
 -   Utilitzant la nomenclatura del codi, podem modificar encara més el nostre algorisme de la següent manera:
@@ -80,13 +70,13 @@
     Tingueu en compte que, mirant aquesta aproximació del codi, gairebé us podeu imaginar com podria semblar això en el codi real.
     
 
-## [Temps d'execució](https://cs50.harvard.edu/x/2023/notes/3/#running-time)
+## Temps d'execució
 
--   _El temps d'execució_ implica una anàlisi utilitzant la notació _O gran_ . Mireu el gràfic següent:
+-   *El temps d'execució* implica una anàlisi utilitzant la notació *O gran* . Mireu el gràfic següent:
     
     ![gràfic amb: "mida del problema" com a eix x;  "temps per resoldre" com a eix y;  línia recta vermella i pronunciada des de l'origen fins a la part superior del gràfic propera al groc, línia recta menys pronunciada des de l'origen fins a la part superior del gràfic, ambdues etiquetades amb "O(n)";  línia corba verda que es fa cada cop menys pronunciada des de l'origen fins a la dreta del gràfic amb l'etiqueta "O(log n)](https://cs50.harvard.edu/x/2023/notes/3/cs50Week3Slide042.png "gran o gràfica")
     
--   Al gràfic anterior, el primer algorisme es troba en \\(O(n)\\). El segon també es troba a \\(O(n)\\). El tercer es troba a \\(O(\\log n)\\).
+-   Al gràfic anterior, el primer algorisme es troba en $O(n)$. El segon també es troba a $O(n)$. El tercer es troba a $O(log n)$.
 -   És la forma de la corba que mostra l'eficiència d'un algorisme. Alguns dels temps de funcionament habituals que podem veure són:
     
     -   \\(O(n^2)\\)
