@@ -1,23 +1,23 @@
 ## Cançons
 
-![Logotip de Spotify Wrapped '22](Can%C3%A7ons%20-%20CS50x%202024/wrapped.png)
+![Logotip de Spotify Wrapped '22](https://cs50.harvard.edu/x/2024/psets/7/songs/wrapped.png)
 
-## [Problema per resoldre](https://cs50.harvard.edu/x/2024/psets/7/songs/#problem-to-solve)
+## Problema per resoldre
 
 Escriu consultes SQL per respondre preguntes sobre una base de dades de les 100 cançons més reproduïdes a [Spotify](https://en.wikipedia.org/wiki/Spotify) el 2018.
 
-## [Demostració](https://cs50.harvard.edu/x/2024/psets/7/songs/#demo)
+## Començant
 
-## [Començant](https://cs50.harvard.edu/x/2024/psets/7/songs/#getting-started)
-
-Per a aquest problema, utilitzareu una base de dades que us ha proporcionat el personal de CS50.
+Per a aquest problema, utilitzareu una base de dades anomenada songs.db.
 
 Descarrega el codi de distribució
 
 Obriu el [codi VS.](https://cs50.dev/)
 
 Comenceu fent clic dins de la finestra de la vostra terminal i, a continuació, executeu `cd`\-lo sol. Hauríeu de trobar que la seva "indicació" s'assembla a la següent.
-
+``` 
+$
+```
 Feu clic dins d'aquesta finestra de terminal i, a continuació, executeu
 
 ```
@@ -27,26 +27,38 @@ wget https://cdn.cs50.net/2023/fall/psets/7/songs.zip
 seguit d'Enter per baixar un ZIP anomenat `songs.zip`al vostre espai de codi. Aneu amb compte de no passar per alt l'espai entre `wget`i l'URL següent, o qualsevol altre caràcter!
 
 Ara executa
+```
+unzip songs.zip
+```
 
 per crear una carpeta anomenada `songs`. Ja no necessiteu el fitxer ZIP, així que podeu executar-lo
-
+```
+rm songs.zip
+```
 i responeu amb "y" seguit d'Enter a la sol·licitud per eliminar el fitxer ZIP que heu baixat.
 
 Ara escriviu
-
+```
+cd songs
+```
 seguit d'Enter per moure't a (és a dir, obrir) aquest directori. La vostra sol·licitud ara hauria de semblar-se a la següent.
-
+```
+songs/ $
+```
 Si tot ha tingut èxit, hauríeu d'executar
+```
+ls
+```
 
 i hauríeu de veure 8 fitxers .sql, `songs.db`, i `answers.txt`.
 
 Si trobeu cap problema, torneu a seguir aquests mateixos passos i comproveu si podeu determinar on us heu equivocat!
 
-## [Comprensió](https://cs50.harvard.edu/x/2024/psets/7/songs/#understanding)
+## Comprensió
 
 Se us proporciona un fitxer anomenat `songs.db`, una base de dades SQLite que emmagatzema dades de [Spotify](https://developer.spotify.com/documentation/web-api/) sobre cançons i els seus artistes. Aquest conjunt de dades conté les 100 millors cançons reproduïdes a Spotify el 2018. En una finestra de terminal, executeu-vos `sqlite3 songs.db`perquè pugueu començar a executar consultes a la base de dades.
 
-En primer lloc, quan `sqlite3`se us demani que proporcioneu una consulta, escriviu `.schema`i premeu Intro. Això generarà les `CREATE TABLE`declaracions que s'han utilitzat per generar cadascuna de les taules de la base de dades. En examinar aquestes afirmacions, podeu identificar les columnes presents a cada taula.
+En primer lloc, quan `sqlite3`se us demani que proporcioneu una consulta, escriviu `.schema`i premeu Intro. Això generarà les declaracions `CREATE TABLE` que s'han utilitzat per generar cadascuna de les taules de la base de dades. En examinar aquestes afirmacions, podeu identificar les columnes presents a cada taula.
 
 Observeu que tots `artist`tenen un `id`i un `name`. Tingueu en compte, també, que cada cançó té un `name`, un `artist_id`(corresponent al `id`de l'artista de la cançó), així com valors de ballabilitat, energia, tonalitat, sonoritat, parla (presència de paraules pronunciades en una pista), valència, tempo i durada de la cançó (mesurada en mil·lisegons).
 
@@ -80,16 +92,16 @@ Per a cadascun dels problemes següents, hauríeu d'escriure una única consulta
 
 Consulteu [aquesta referència de paraules clau SQL](https://www.w3schools.com/sql/sql_ref_keywords.asp) per obtenir algunes sintaxis SQL que poden ser útils!
 
-Llista els noms de totes les cançons de la base de dades
+**Llista els noms de totes les cançons de la base de dades**
 
 Recordeu que, per seleccionar tots els valors de la columna d'una taula, podeu utilitzar `SELECT`la paraula clau d'SQL. `SELECT`va seguit de la columna (o columnes) que voleu seleccionar, que al seu torn va seguida d' `FROM table`on `table`és el nom de la taula de la qual voleu seleccionar.
 
 Aleshores `1.sql`, proveu d'escriure el següent:
 
-```
-<span>-- All songs in the database.</span>
-<span>SELECT</span> <span>name</span>
-<span>FROM</span> <span>songs</span><span>;</span>
+```sql
+-- All songs in the database.
+SELECT name
+FROM songs;
 ```
 Llista els noms de totes les cançons en ordre creixent de tempo
 
