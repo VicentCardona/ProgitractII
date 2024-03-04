@@ -1,6 +1,6 @@
 ## Fiftyville
 
-## Problema per resoldre
+## Problema a resoldre
 
 Hi ha hagut un robatori a Fiftyville! Ni més ni menys que un ànec de plàstic! La ciutat de Fiftyville us ha cridat a resoldre el misteri 🕵 de l'ànec robat. 
 Les autoritats creuen que el lladre va robar l'ànec i després, poc després, va agafar un vol fora de la ciutat 🛫amb l'ajuda d'un còmplice. El vostre objectiu és identificar:
