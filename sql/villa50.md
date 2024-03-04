@@ -72,32 +72,31 @@ Un cop resolt el misteri, completa cadascuna de les preguntes `answers.txt`escri
 
 En última instància, hauríeu d'enviar tant els vostres fitxers `log.sql`com els vostres `answers.txt`.
 
-## [Tutorial](https://cs50.harvard.edu/x/2024/psets/7/fiftyville/#walkthrough)
-
-<iframe allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen="" data-video="" src="https://www.youtube.com/embed/YHhgEoJMDnU?modestbranding=0&amp;rel=0&amp;showinfo=0" scrolling="no" data-ruffle-polyfilled="" id="iFrameResizer0"></iframe>
-
-## [Pistes](https://cs50.harvard.edu/x/2024/psets/7/fiftyville/#hints)
+## Pistes
 
 -   Executeu `sqlite3 fiftyville.db`per començar a executar consultes a la base de dades.
     -   Durant l'execució `sqlite3`, l'execució `.tables`llistarà totes les taules de la base de dades.
     -   Mentre s'executa `sqlite3`, executant `.schema TABLE_NAME`, on `TABLE_NAME`és el nom d'una taula a la base de dades, us mostrarà l' `CREATE TABLE`ordre utilitzada per crear la taula. Això pot ser útil per saber quines columnes consultar!
--   Potser us serà útil començar amb la `crime_scene_reports`taula. Comenceu per buscar un informe de l'escena del crim que coincideixi amb la data i la ubicació del crim.
+-   Potser us serà útil començar amb la taula `crime_scene_reports`. Comenceu per buscar un informe de l'escena del crim que coincideixi amb la data i la ubicació del crim.
 -   Consulteu [aquesta referència de paraules clau SQL](https://www.w3schools.com/sql/sql_ref_keywords.asp) per obtenir algunes sintaxis SQL que poden ser útils!
 
-## [Com provar](https://cs50.harvard.edu/x/2024/psets/7/fiftyville/#how-to-test)
 
-### [Correcció](https://cs50.harvard.edu/x/2024/psets/7/fiftyville/#correctness)
+
+###Correcció
 
 ```
 check50 cs50/problems/2024/x/fiftyville
 ```
 
-## [Com enviar](https://cs50.harvard.edu/x/2024/psets/7/fiftyville/#how-to-submit)
-
-```
-submit50 cs50/problems/2024/x/fiftyville
-```
-
 ## [Agraïments](https://cs50.harvard.edu/x/2024/psets/7/fiftyville/#acknowledgements)
 
 Inspirat en un altre cas a [SQL City](https://mystery.knightlab.com/) .
+
+# Crèdits
+#### Autor:  Vicent Cardona
+#### Departament Tecnologia [Ies Quartó de Portmany](http://iesquartodeportmany.es/)
+#### Març 2024
+
+Llicència Creative Commons [Reconeixement-NoComercial-CompartirIgual 4.0 Internacional](https://creativecommons.org/licenses/by-nc-sa/4.0/) (CC BY-NC-SA 4.0).
+
+Material adaptat del curs  [Introducció a la informàtica CS50](https://cs50.harvard.edu/x/2023/) compartit amb la mateixa llicència.
