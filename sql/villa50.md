@@ -82,7 +82,7 @@ En última instància, hauríeu d'enviar tant els vostres fitxers `log.sql`com e
 
 
 
-###Correcció
+## Correcció
 
 ```
 check50 cs50/problems/2024/x/fiftyville
