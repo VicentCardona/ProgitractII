@@ -15,7 +15,7 @@ Com faràs per resoldre aquest misteri? Les autoritats de Fiftyville han agafat 
 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/S5Glfe6UeXQ?si=-KMogeFEwyzXWpG_" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
 
-## [Començant](https://cs50.harvard.edu/x/2024/psets/7/fiftyville/#getting-started)
+## Començant
 
 Per a aquest problema, utilitzareu una base de dades que us ha proporcionat el personal de CS50.
 
@@ -88,7 +88,7 @@ En última instància, hauríeu d'enviar tant els vostres fitxers `log.sql`com e
 check50 cs50/problems/2024/x/fiftyville
 ```
 
-## [Agraïments](https://cs50.harvard.edu/x/2024/psets/7/fiftyville/#acknowledgements)
+## Agraïments
 
 Inspirat en un altre cas a [SQL City](https://mystery.knightlab.com/) .
 
