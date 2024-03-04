@@ -13,7 +13,7 @@ Tot el que sabeu és que el robatori **va tenir lloc el 28 de juliol de 2023** i
 
 Com faràs per resoldre aquest misteri? Les autoritats de Fiftyville han agafat alguns dels registres de la ciutat de l'època del robatori i han preparat una base de dades SQLite per a tu, `fiftyville.db`que conté taules de dades de tota la ciutat. Podeu consultar aquesta taula mitjançant consultes SQL `SELECT` per accedir a les dades del vostre interès. Utilitzant només la informació de la base de dades, la vostra tasca és resoldre el misteri.
 
-## [Demostració](https://cs50.harvard.edu/x/2024/psets/7/fiftyville/#demo)
+<iframe width="560" height="315" src="https://www.youtube.com/embed/S5Glfe6UeXQ?si=-KMogeFEwyzXWpG_" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
 
 ## [Començant](https://cs50.harvard.edu/x/2024/psets/7/fiftyville/#getting-started)
 
@@ -21,8 +21,11 @@ Per a aquest problema, utilitzareu una base de dades que us ha proporcionat el p
 
 Descarrega el codi de distribució
 
-Inicieu sessió a [cs50.dev](https://cs50.dev/) , feu clic a la finestra del vostre terminal i executeu `cd`\-lo sol. Hauríeu de trobar que la sol·licitud de la vostra finestra de terminal s'assembla a la següent:
+Inicieu sessió a [cs50.dev](https://cs50.dev/) , feu clic a la finestra del vostre terminal i executeu `cd` sol. Hauríeu de trobar que la sol·licitud de la vostra finestra de terminal s'assembla a la següent:
 
+```
+$
+```
 A continuació, executeu
 
 ```
@@ -32,16 +35,26 @@ wget https://cdn.cs50.net/2023/fall/psets/7/fiftyville.zip
 per descarregar un ZIP cridat `fiftyville.zip`al vostre espai de codi.
 
 Després executar
+```
+unzip fiftyville.zip
+
+```
 
 per crear una carpeta anomenada `fiftyville`. Ja no necessiteu el fitxer ZIP, així que podeu executar-lo
-
+```
+rm fiftyville.zip
+```
 i responeu amb "y" seguit d'Enter a la sol·licitud per eliminar el fitxer ZIP que heu baixat.
 
 Ara escriviu
-
+```
+cd fiftyville
+```
 seguit d'Enter per moure't a (és a dir, obrir) aquest directori. La vostra sol·licitud ara hauria de semblar-se a la següent.
-
-Executeu `ls`\-lo sol i hauríeu de veure uns quants fitxers:
+```
+fiftyville/$
+```
+Executeu `ls` sol i hauríeu de veure uns quants fitxers:
 
 ```
 answers.txt  fiftyville.db  log.sql
@@ -49,13 +62,13 @@ answers.txt  fiftyville.db  log.sql
 
 Si trobeu cap problema, torneu a seguir aquests mateixos passos i comproveu si podeu determinar on us heu equivocat!
 
-## [Especificació](https://cs50.harvard.edu/x/2024/psets/7/fiftyville/#specification)
+## Especificació
 
 Per a aquest problema, tan important com resoldre el misteri en si és el procés que feu servir per resoldre el misteri. A `log.sql`, manteniu un registre de totes les consultes SQL que executeu a la base de dades. A sobre de cada consulta, etiqueteu cadascuna amb un comentari (en SQL, els comentaris són les línies que comencen per `--`) que descriguin per què esteu executant la consulta i/o quina informació espereu obtenir d'aquesta consulta en particular. Podeu utilitzar els comentaris al fitxer de registre per afegir notes addicionals sobre el vostre procés de pensament mentre resoleu el misteri: en última instància, aquest fitxer hauria de servir com a prova del procés que heu utilitzat per identificar el lladre!
 
 A mesura que escriviu les vostres consultes, podeu notar que algunes d'elles poden arribar a ser força complexes. Per ajudar a mantenir les vostres consultes llegibles, consulteu els principis del bon estil a [sqlstyle.guide](https://www.sqlstyle.guide/) . La secció [de sagnat](https://www.sqlstyle.guide/#indentation) pot ser especialment útil!
 
-Un cop resoltes el misteri, completa cadascuna de les línies `answers.txt`escrivint el nom del lladre, la ciutat a la qual va escapar el lladre i el nom del còmplice del lladre que els va ajudar a escapar de la ciutat. (Assegureu-vos de no canviar cap text existent al fitxer ni afegir cap altra línia al fitxer!)
+Un cop resolt el misteri, completa cadascuna de les preguntes `answers.txt`escrivint el nom del lladre, la ciutat a la qual va escapar el lladre i el nom del còmplice del lladre que els va ajudar a escapar de la ciutat. (Assegureu-vos de no canviar cap text existent al fitxer ni afegir cap altra línia al fitxer!)
 
 En última instància, hauríeu d'enviar tant els vostres fitxers `log.sql`com els vostres `answers.txt`.
 
