@@ -677,7 +677,7 @@
     Observeu que `style.css`està enllaçat a aquest fitxer HTML com a full d'estils, indicant al navegador on ha de localitzar els estils que hem creat.
     
 
-## [Frameworks]
+## Frameworks
 
 -   De manera similar a les biblioteques de tercers que podem aprofitar a Python, hi ha biblioteques de tercers anomenades _marcs_ que podem utilitzar amb els nostres fitxers HTML.
 -   _Bootstrap_ és un d'aquests marcs que podem utilitzar per embellir el nostre HTML i perfeccionar fàcilment els elements de disseny de manera que les nostres pàgines siguin més llegibles.
