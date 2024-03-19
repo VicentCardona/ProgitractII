@@ -120,7 +120,7 @@
 -   El navegador llegirà el vostre fitxer HTML de dalt a baix i d'esquerra a dreta.
 -   Com que els espais en blanc i el sagnat s'ignoren de manera efectiva en HTML, haureu d'utilitzar `<p>`etiquetes de paràgraf per obrir i tancar un paràgraf. Tingueu en compte el següent:
     
-    ```
+    ``` html
     <!DOCTYPE html>
     
     <!-- Demonstrates paragraphs -->
@@ -156,7 +156,7 @@
     
 -   HTML permet la representació d'encapçalaments:
     
-    ```
+    ``` html
     <!DOCTYPE html>
     
     <!-- Demonstrates headings (for chapters, sections, subsections, etc.) -->
@@ -208,7 +208,7 @@
     
 -   També podem crear llistes no ordenades dins d'HTML:
     
-    ```
+    ``` html
     <!DOCTYPE html>
     
     <!-- Demonstrates (ordered) lists -->
@@ -231,7 +231,7 @@
     
 -   També podem crear llistes ordenades dins d'HTML:
     
-    ```
+    ``` html
     <!DOCTYPE html>
     
     <!-- Demonstrates (ordered) lists -->
@@ -294,7 +294,7 @@
     
 -   Les imatges també es poden utilitzar dins d'HTML:
     
-    ```
+    ``` html
     <!DOCTYPE html>
     
     <!-- Demonstrates image -->
@@ -313,7 +313,7 @@
     
 -   Els vídeos també es poden incloure en HTML:
     
-    ```
+    ``` html
     <!DOCTYPE html>
     
     <!-- Demonstrates video -->
@@ -333,8 +333,8 @@
     Tingueu en compte que l' `type`atribut indica que es tracta d'un vídeo del tipus `mp4`. A més, observeu com `controls`i `muted`es passen a `video`.
     
 -   També podeu enllaçar entre diverses pàgines web:
-    
-    ```
+-   
+    ``` html
     <!DOCTYPE html>
     
     <!-- Demonstrates link -->
@@ -353,7 +353,7 @@
     
 -   Les metaetiquetes s'utilitzen per contenir informació sobre les dades dins del fitxer HTML. Tingueu en compte el següent:
     
-    ```
+    ``` html
     <!DOCTYPE html>
     
     <!-- Demonstrates responsive design -->
@@ -373,7 +373,7 @@
     
 -   Hi ha nombrosos `meta`parells clau-valor que podeu utilitzar:
     
-    ```
+    ``` html
     <!DOCTYPE html>
     
     <!-- Demonstrates Open Graph tags -->
@@ -395,7 +395,7 @@
     
 -   També podeu crear formularis que recordin la cerca de Google:
     
-    ```
+    ``` html
     <!DOCTYPE html>
     
     <!-- Demonstrates form -->
@@ -417,7 +417,7 @@
     
 -   Podem millorar aquesta cerca de la següent manera:
     
-    ```
+    ``` html
     <!DOCTYPE html>
     
     <!-- Demonstrates additional form attributes -->
@@ -439,12 +439,12 @@
     
 -   Hem vist només alguns dels molts elements HTML que podeu afegir al vostre lloc. Si teniu alguna idea per afegir al vostre lloc que encara no hem vist (un botó, un fitxer d'àudio, etc.), proveu a Google "X en HTML" per trobar la sintaxi correcta! De la mateixa manera, podeu utilitzar [cs50.ai](https://cs50.ai/) per ajudar-vos a descobrir més funcions HTML!
 
-## [Expressions regulars](https://cs50.harvard.edu/x/2024/notes/8/#regular-expressions)
+##[Expressions regulars
 
--   _Les expressions regulars_ o _expressions regulars_ són un mitjà per garantir que les dades proporcionades per l'usuari s'ajustin a un format específic.
+-   _Les expressions regulars_ o _Regular Expressions_ són un mitjà per garantir que les dades proporcionades per l'usuari s'ajustin a un format específic.
 -   Podem implementar la nostra pròpia pàgina de registre que utilitza execucions regulars de la següent manera:
     
-    ```
+    ``` html
     <!DOCTYPE html>
     
     <!-- Demonstrates type="email" -->
@@ -466,7 +466,7 @@
     
 -   Tot i que el navegador utilitza aquests atributs integrats per comprovar si hi ha una adreça de correu electrònic, podem afegir un `pattern`atribut per assegurar-nos que només les dades específiques acabin a l'adreça de correu electrònic:
     
-    ```
+    ``` html
     <!DOCTYPE html>
     
     <!-- Demonstrates pattern attribute -->
@@ -488,13 +488,13 @@
     
 -   Podeu obtenir més informació sobre les expressions regulars a [la documentació de Mozilla](https://cs50.harvard.edu/x/2024/notes/8/developer.mozilla.org/en-US/docs/Web/JavaScript/Guide/Regular_expressions) . A més, podeu fer consultes a [cs50.ai](https://cs50.ai/) per obtenir suggeriments.
 
-## [CSS](https://cs50.harvard.edu/x/2024/notes/8/#css)
+## CSS
 
 -   `CSS`, o _full d'estil en cascada_ , és un llenguatge de marques que us permet afinar l'estètica dels vostres fitxers HTML.
 -   CSS està ple de _propietats_ , que inclouen parells clau-valor.
 -   Al terminal, escriviu `code home.html`i escriviu el codi de la següent manera:
     
-    ```
+    ``` html
     <!DOCTYPE html>
     
     <!-- Demonstrates inline CSS with P tags -->
@@ -521,7 +521,7 @@
     
 -   Tot i que és correcte, l'anterior no està ben dissenyat. Podem eliminar la redundància modificant el nostre codi de la següent manera:
     
-    ```
+    ``` html
     <!DOCTYPE html>
     
     <!-- Removes outer DIV -->
@@ -548,7 +548,7 @@
     
 -   Resulta que hi ha etiquetes semàntiques més noves que s'inclouen a HTML. Podem modificar el nostre codi de la següent manera:
     
-    ```
+    ``` html
     <!DOCTYPE html>
     
     <!-- Uses semantic tags instead of DIVs -->
@@ -575,7 +575,7 @@
     
 -   Aquesta pràctica de col·locar l'estil i la informació al mateix lloc no és una bona pràctica. Podríem moure els elements d'estil a la part superior del fitxer de la següent manera:
     
-    ```
+    ``` html
     <!-- Demonstrates class selectors -->
     
     <html lang="en">
@@ -623,7 +623,7 @@
     
 -   Resulta que podem moure tot el nostre codi d'estil a un fitxer especial anomenat fitxer _CSS_ . Podem crear un fitxer anomenat `style.css`i enganxar-hi les nostres classes:
     
-    ```
+    ``` css
     .centered
     {
         text-align: center;
@@ -649,7 +649,7 @@
     
 -   Aleshores podem dir al navegador on ha de localitzar el CSS d'aquest fitxer HTML:
     
-    ```
+    ``` html
     <!DOCTYPE html>
     
     <!-- Demonstrates external stylesheets -->
@@ -676,7 +676,7 @@
     Observeu que `style.css`està enllaçat a aquest fitxer HTML com a full d'estils, indicant al navegador on ha de localitzar els estils que hem creat.
     
 
-## [Marcs](https://cs50.harvard.edu/x/2024/notes/8/#frameworks)
+## [Frameworks]
 
 -   De manera similar a les biblioteques de tercers que podem aprofitar a Python, hi ha biblioteques de tercers anomenades _marcs_ que podem utilitzar amb els nostres fitxers HTML.
 -   _Bootstrap_ és un d'aquests marcs que podem utilitzar per embellir el nostre HTML i perfeccionar fàcilment els elements de disseny de manera que les nostres pàgines siguin més llegibles.
