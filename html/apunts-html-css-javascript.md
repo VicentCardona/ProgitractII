@@ -88,24 +88,24 @@
     
 -   Val la pena esmentar que `500`els errors sempre són culpa vostra com a desenvolupador. Això serà especialment important per al conjunt de problemes de la setmana vinent i, potencialment, per al vostre projecte final!
 
-## [HTML](https://cs50.harvard.edu/x/2024/notes/8/#html)
+## HTML
 
 -   _El llenguatge de marques_ _HTML_ o d'hipertext està format per _etiquetes_ , cadascuna de les quals pot tenir alguns _atributs_ que el descriuen.
 -   Al terminal, escriviu `code hello.html`i escriviu el codi de la següent manera:
     
-    ```
-    &lt;!DOCTYPE html&gt;
+    ``` html
+    <!DOCTYPE html>
     
-    &lt;!-- Demonstrates HTML --&gt;
+    <!-- Demonstrates HTML -->
     
-    &lt;html lang="en"&gt;
-        &lt;head&gt;
-            &lt;title&gt;hello, title&lt;/title&gt;
-        &lt;/head&gt;
-        &lt;body&gt;
+    <html lang="en">
+        <head>
+            <title>hello, title</title>
+        </head>
+        <body>
             hello, body
-        &lt;/body&gt;
-    &lt;/html&gt;
+        </body>
+    </html>
     ```
     
     Observeu que l' `html`etiqueta obre i tanca aquest fitxer. A més, observeu l' `lang`atribut, que modifica el comportament de l' `html`etiqueta. A més, tingueu en compte que hi ha `head`etiquetes i `body`etiquetes. El sagnat no és necessari, però suggereix una jerarquia.
@@ -121,35 +121,35 @@
 -   Com que els espais en blanc i el sagnat s'ignoren de manera efectiva en HTML, haureu d'utilitzar `<p>`etiquetes de paràgraf per obrir i tancar un paràgraf. Tingueu en compte el següent:
     
     ```
-    &lt;!DOCTYPE html&gt;
+    <!DOCTYPE html>
     
-    &lt;!-- Demonstrates paragraphs --&gt;
+    <!-- Demonstrates paragraphs -->
     
-    &lt;html lang="en"&gt;
-        &lt;head&gt;
-            &lt;title&gt;paragraphs&lt;/title&gt;
-        &lt;/head&gt;
-        &lt;body&gt;
-            &lt;p&gt;
+    <html lang="en">
+        <head>
+            <title>paragraphs</title>
+        </head>
+        <body>
+            <p>
                 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus convallis scelerisque quam, vel hendrerit lectus viverra eu. Praesent posuere eget lectus ut faucibus. Etiam eu velit laoreet, gravida lorem in, viverra est. Cras ut purus neque. In porttitor non lorem id lobortis. Mauris gravida metus libero, quis maximus dui porta at. Donec lacinia felis consectetur venenatis scelerisque. Nulla eu nisl sollicitudin, varius velit sit amet, vehicula erat. Curabitur sollicitudin felis sit amet orci mattis, a tempus nulla pulvinar. Aliquam erat volutpat.
-            &lt;/p&gt;
-            &lt;p&gt;
+            </p>
+            <p>
                 Mauris ut dui in eros semper hendrerit. Morbi vel elit mi. Sed sit amet ex non quam dignissim dignissim et vel arcu. Pellentesque eget elementum orci. Morbi ac cursus ex. Pellentesque quis turpis blandit orci dapibus semper sed non nunc. Nulla et dolor nec lacus finibus volutpat. Sed non lorem diam. Donec feugiat interdum interdum. Vivamus et justo in enim blandit fermentum vel at elit. Phasellus eu ante vitae ligula varius aliquet. Etiam id posuere nibh.
-            &lt;/p&gt;
-            &lt;p&gt;
+            </p>
+            <p>
                 Aenean venenatis convallis ante a rhoncus. Nullam in metus vel diam vehicula tincidunt. Donec lacinia metus sem, sit amet egestas elit blandit sit amet. Nunc egestas sem quis nisl mattis semper. Pellentesque ut magna congue lorem eleifend sodales. Donec tortor tortor, aliquam vitae mollis sed, interdum ut lectus. Mauris non purus quis ipsum lacinia tincidunt.
-            &lt;/p&gt;
-            &lt;p&gt;
+            </p>
+            <p>
                 Integer at justo lacinia libero blandit aliquam ut ut dui. Quisque tincidunt facilisis venenatis. Nullam dictum odio quis lorem luctus, vel malesuada dolor luctus. Aenean placerat faucibus enim a facilisis. Maecenas eleifend quis massa sed eleifend. Ut ultricies, dui ac vulputate hendrerit, ex metus iaculis diam, vitae fermentum libero dui et ante. Phasellus suscipit, arcu ut consequat sagittis, massa urna accumsan massa, eu aliquet nulla lorem vitae arcu. Pellentesque rutrum felis et metus porta semper. Nam ac consectetur mauris.
-            &lt;/p&gt;
-            &lt;p&gt;
+            </p>
+            <p>
                 Suspendisse rutrum vestibulum odio, sed venenatis purus condimentum sed. Morbi ornare tincidunt augue eu auctor. Vivamus sagittis ac lectus at aliquet. Nulla urna mauris, interdum non nibh in, vehicula porta enim. Donec et posuere sapien. Pellentesque ultrices scelerisque ipsum, vel fermentum nibh tincidunt et. Proin gravida porta ipsum nec scelerisque. Vestibulum fringilla erat at turpis laoreet, nec hendrerit nisi scelerisque.
-            &lt;/p&gt;
-            &lt;p&gt;
+            </p>
+            <p>
                 Sed quis malesuada mi. Nam id purus quis augue sagittis pharetra. Nulla facilisi. Maecenas vel fringilla ante. Cras tristique, arcu sit amet blandit auctor, urna elit ultricies lacus, a malesuada eros dui id massa. Aliquam sem odio, pretium vel cursus eget, scelerisque at urna. Vestibulum posuere a turpis consectetur consectetur. Cras consequat, risus quis tempor egestas, nulla ipsum ornare erat, nec accumsan nibh lorem nec risus. Integer at iaculis lacus. Integer congue nunc massa, quis molestie felis pellentesque vestibulum. Nulla odio tortor, aliquam nec quam in, ornare aliquet sapien.
-            &lt;/p&gt;
-        &lt;/body&gt;
-    &lt;/html&gt;
+            </p>
+        </body>
+    </html>
     ```
     
     Tingueu en compte que els paràgrafs comencen amb una `<p>`etiqueta i acaben amb una `</p>`etiqueta.
@@ -157,51 +157,51 @@
 -   HTML permet la representació d'encapçalaments:
     
     ```
-    &lt;!DOCTYPE html&gt;
+    <!DOCTYPE html>
     
-    &lt;!-- Demonstrates headings (for chapters, sections, subsections, etc.) --&gt;
+    <!-- Demonstrates headings (for chapters, sections, subsections, etc.) -->
     
-    &lt;html lang="en"&gt;
+    <html lang="en">
     
-        &lt;head&gt;
-            &lt;title&gt;headings&lt;/title&gt;
-        &lt;/head&gt;
+        <head>
+            <title>headings</title>
+        </head>
     
-        &lt;body&gt;
+        <body>
     
-            &lt;h1&gt;One&lt;/h1&gt;
-            &lt;p&gt;
+            <h1>One</h1>
+            <p>
                 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus convallis scelerisque quam, vel hendrerit lectus viverra eu. Praesent posuere eget lectus ut faucibus. Etiam eu velit laoreet, gravida lorem in, viverra est. Cras ut purus neque. In porttitor non lorem id lobortis. Mauris gravida metus libero, quis maximus dui porta at. Donec lacinia felis consectetur venenatis scelerisque. Nulla eu nisl sollicitudin, varius velit sit amet, vehicula erat. Curabitur sollicitudin felis sit amet orci mattis, a tempus nulla pulvinar. Aliquam erat volutpat.
-            &lt;/p&gt;
+            </p>
     
-            &lt;h2&gt;Two&lt;/h2&gt;
-            &lt;p&gt;
+            <h2>Two</h2>
+            <p>
                 Mauris ut dui in eros semper hendrerit. Morbi vel elit mi. Sed sit amet ex non quam dignissim dignissim et vel arcu. Pellentesque eget elementum orci. Morbi ac cursus ex. Pellentesque quis turpis blandit orci dapibus semper sed non nunc. Nulla et dolor nec lacus finibus volutpat. Sed non lorem diam. Donec feugiat interdum interdum. Vivamus et justo in enim blandit fermentum vel at elit. Phasellus eu ante vitae ligula varius aliquet. Etiam id posuere nibh.
-            &lt;/p&gt;
+            </p>
     
-            &lt;h3&gt;Three&lt;/h3&gt;
-            &lt;p&gt;
+            <h3>Three</h3>
+            <p>
                 Aenean venenatis convallis ante a rhoncus. Nullam in metus vel diam vehicula tincidunt. Donec lacinia metus sem, sit amet egestas elit blandit sit amet. Nunc egestas sem quis nisl mattis semper. Pellentesque ut magna congue lorem eleifend sodales. Donec tortor tortor, aliquam vitae mollis sed, interdum ut lectus. Mauris non purus quis ipsum lacinia tincidunt.
-            &lt;/p&gt;
+            </p>
     
-            &lt;h4&gt;Four&lt;/h4&gt;
-            &lt;p&gt;
+            <h4>Four</h4>
+            <p>
                 Integer at justo lacinia libero blandit aliquam ut ut dui. Quisque tincidunt facilisis venenatis. Nullam dictum odio quis lorem luctus, vel malesuada dolor luctus. Aenean placerat faucibus enim a facilisis. Maecenas eleifend quis massa sed eleifend. Ut ultricies, dui ac vulputate hendrerit, ex metus iaculis diam, vitae fermentum libero dui et ante. Phasellus suscipit, arcu ut consequat sagittis, massa urna accumsan massa, eu aliquet nulla lorem vitae arcu. Pellentesque rutrum felis et metus porta semper. Nam ac consectetur mauris.
-            &lt;/p&gt;
+            </p>
     
-            &lt;h5&gt;Five&lt;/h5&gt;
-            &lt;p&gt;
+            <h5>Five</h5>
+            <p>
                 Suspendisse rutrum vestibulum odio, sed venenatis purus condimentum sed. Morbi ornare tincidunt augue eu auctor. Vivamus sagittis ac lectus at aliquet. Nulla urna mauris, interdum non nibh in, vehicula porta enim. Donec et posuere sapien. Pellentesque ultrices scelerisque ipsum, vel fermentum nibh tincidunt et. Proin gravida porta ipsum nec scelerisque. Vestibulum fringilla erat at turpis laoreet, nec hendrerit nisi scelerisque.
-            &lt;/p&gt;
+            </p>
     
-            &lt;h6&gt;Six&lt;/h6&gt;
-            &lt;p&gt;
+            <h6>Six</h6>
+            <p>
                 Sed quis malesuada mi. Nam id purus quis augue sagittis pharetra. Nulla facilisi. Maecenas vel fringilla ante. Cras tristique, arcu sit amet blandit auctor, urna elit ultricies lacus, a malesuada eros dui id massa. Aliquam sem odio, pretium vel cursus eget, scelerisque at urna. Vestibulum posuere a turpis consectetur consectetur. Cras consequat, risus quis tempor egestas, nulla ipsum ornare erat, nec accumsan nibh lorem nec risus. Integer at iaculis lacus. Integer congue nunc massa, quis molestie felis pellentesque vestibulum. Nulla odio tortor, aliquam nec quam in, ornare aliquet sapien.
-            &lt;/p&gt;
+            </p>
     
-        &lt;/body&gt;
+        </body>
     
-    &lt;/html&gt;
+    </html>
     ```
     
     Observeu que `<h1>`, `<h2>`, i `<h3>`denoten diferents nivells d'encapçalaments.
@@ -209,22 +209,22 @@
 -   També podem crear llistes no ordenades dins d'HTML:
     
     ```
-    &lt;!DOCTYPE html&gt;
+    <!DOCTYPE html>
     
-    &lt;!-- Demonstrates (ordered) lists --&gt;
+    <!-- Demonstrates (ordered) lists -->
     
-    &lt;html lang="en"&gt;
-        &lt;head&gt;
-            &lt;title&gt;list&lt;/title&gt;
-        &lt;/head&gt;
-        &lt;body&gt;
-            &lt;ul&gt;
-                &lt;li&gt;foo&lt;/li&gt;
-                &lt;li&gt;bar&lt;/li&gt;
-                &lt;li&gt;baz&lt;/li&gt;
-            &lt;/ul&gt;
-        &lt;/body&gt;
-    &lt;/html&gt;
+    <html lang="en">
+        <head>
+            <title>list</title>
+        </head>
+        <body>
+            <ul>
+                <li>foo</li>
+                <li>bar</li>
+                <li>baz</li>
+            </ul>
+        </body>
+    </html>
     ```
     
     Observeu que l' `<ul>`etiqueta crea una llista no ordenada que conté tres elements.
@@ -232,22 +232,22 @@
 -   També podem crear llistes ordenades dins d'HTML:
     
     ```
-    &lt;!DOCTYPE html&gt;
+    <!DOCTYPE html>
     
-    &lt;!-- Demonstrates (ordered) lists --&gt;
+    <!-- Demonstrates (ordered) lists -->
     
-    &lt;html lang="en"&gt;
-        &lt;head&gt;
-            &lt;title&gt;list&lt;/title&gt;
-        &lt;/head&gt;
-        &lt;body&gt;
-            &lt;ol&gt;
-                &lt;li&gt;foo&lt;/li&gt;
-                &lt;li&gt;bar&lt;/li&gt;
-                &lt;li&gt;baz&lt;/li&gt;
-            &lt;/ol&gt;
-        &lt;/body&gt;
-    &lt;/html&gt;
+    <html lang="en">
+        <head>
+            <title>list</title>
+        </head>
+        <body>
+            <ol>
+                <li>foo</li>
+                <li>bar</li>
+                <li>baz</li>
+            </ol>
+        </body>
+    </html>
     ```
     
     Observeu que l' `<ol>`etiqueta crea una llista ordenada que conté tres elements.
@@ -255,39 +255,39 @@
 -   També podem crear una taula en HTML:
     
     ``` html
-    &lt;!DOCTYPE html&gt;
+    <!DOCTYPE html>
     
-    &lt;!-- Demonstrates table --&gt;
+    <!-- Demonstrates table -->
     
-    &lt;html lang="en"&gt;
-        &lt;head&gt;
-            &lt;title&gt;table&lt;/title&gt;
-        &lt;/head&gt;
-        &lt;body&gt;
-            &lt;table&gt;
-                &lt;tr&gt;
-                    &lt;td&gt;1&lt;/td&gt;
-                    &lt;td&gt;2&lt;/td&gt;
-                    &lt;td&gt;3&lt;/td&gt;
-                &lt;/tr&gt;
-                &lt;tr&gt;
-                    &lt;td&gt;4&lt;/td&gt;
-                    &lt;td&gt;5&lt;/td&gt;
-                    &lt;td&gt;6&lt;/td&gt;
-                &lt;/tr&gt;
-                &lt;tr&gt;
-                    &lt;td&gt;7&lt;/td&gt;
-                    &lt;td&gt;8&lt;/td&gt;
-                    &lt;td&gt;9&lt;/td&gt;
-                &lt;/tr&gt;
-                &lt;tr&gt;
-                    &lt;td&gt;*&lt;/td&gt;
-                    &lt;td&gt;0&lt;/td&gt;
-                    &lt;td&gt;#&lt;/td&gt;
-                &lt;/tr&gt;
-            &lt;/table&gt;
-        &lt;/body&gt;
-    &lt;/html&gt;
+    <html lang="en">
+        <head>
+            <title>table</title>
+        </head>
+        <body>
+            <table>
+                <tr>
+                    <td>1</td>
+                    <td>2</td>
+                    <td>3</td>
+                </tr>
+                <tr>
+                    <td>4</td>
+                    <td>5</td>
+                    <td>6</td>
+                </tr>
+                <tr>
+                    <td>7</td>
+                    <td>8</td>
+                    <td>9</td>
+                </tr>
+                <tr>
+                    <td>*</td>
+                    <td>0</td>
+                    <td>#</td>
+                </tr>
+            </table>
+        </body>
+    </html>
     ```
     
     Les taules també tenen etiquetes que obren i tanquen cada element. A més, tingueu en compte la sintaxi dels comentaris en HTML.
@@ -295,18 +295,18 @@
 -   Les imatges també es poden utilitzar dins d'HTML:
     
     ```
-    &lt;!DOCTYPE html&gt;
+    <!DOCTYPE html>
     
-    &lt;!-- Demonstrates image --&gt;
+    <!-- Demonstrates image -->
     
-    &lt;html lang="en"&gt;
-        &lt;head&gt;
-            &lt;title&gt;image&lt;/title&gt;
-        &lt;/head&gt;
-        &lt;body&gt;
-            &lt;img alt="photo of bridge" src="bridge.png"&gt;
-        &lt;/body&gt;
-    &lt;/html&gt;
+    <html lang="en">
+        <head>
+            <title>image</title>
+        </head>
+        <body>
+            <img alt="photo of bridge" src="bridge.png">
+        </body>
+    </html>
     ```
     
     Observeu que `src="bridge.png"`indica el camí on es pot localitzar el fitxer d'imatge.
@@ -314,20 +314,20 @@
 -   Els vídeos també es poden incloure en HTML:
     
     ```
-    &lt;!DOCTYPE html&gt;
+    <!DOCTYPE html>
     
-    &lt;!-- Demonstrates video --&gt;
+    <!-- Demonstrates video -->
     
-    &lt;html lang="en"&gt;
-        &lt;head&gt;
-            &lt;title&gt;video&lt;/title&gt;
-        &lt;/head&gt;
-        &lt;body&gt;
-            &lt;video controls muted&gt;
-                &lt;source src="video.mp4" type="video/mp4"&gt;
-            &lt;/video&gt;
-        &lt;/body&gt;
-    &lt;/html&gt;
+    <html lang="en">
+        <head>
+            <title>video</title>
+        </head>
+        <body>
+            <video controls muted>
+                <source src="video.mp4" type="video/mp4">
+            </video>
+        </body>
+    </html>
     ```
     
     Tingueu en compte que l' `type`atribut indica que es tracta d'un vídeo del tipus `mp4`. A més, observeu com `controls`i `muted`es passen a `video`.
@@ -335,18 +335,18 @@
 -   També podeu enllaçar entre diverses pàgines web:
     
     ```
-    &lt;!DOCTYPE html&gt;
+    <!DOCTYPE html>
     
-    &lt;!-- Demonstrates link --&gt;
+    <!-- Demonstrates link -->
     
-    &lt;html lang="en"&gt;
-        &lt;head&gt;
-            &lt;title&gt;link&lt;/title&gt;
-        &lt;/head&gt;
-        &lt;body&gt;
-           Visit &lt;a href="https://www.harvard.edu"&gt;Harvard&lt;/a&gt;.
-        &lt;/body&gt;
-    &lt;/html&gt;
+    <html lang="en">
+        <head>
+            <title>link</title>
+        </head>
+        <body>
+           Visit <a href="https://www.harvard.edu">Harvard</a>.
+        </body>
+    </html>
     ```
     
     Tingueu en compte que l' etiqueta _d'ancoratge_`<a>` o s'utilitza per fer un text enllaçable.`Harvard`
@@ -354,19 +354,19 @@
 -   Les metaetiquetes s'utilitzen per contenir informació sobre les dades dins del fitxer HTML. Tingueu en compte el següent:
     
     ```
-    &lt;!DOCTYPE html&gt;
+    <!DOCTYPE html>
     
-    &lt;!-- Demonstrates responsive design --&gt;
+    <!-- Demonstrates responsive design -->
     
-    &lt;html lang="en"&gt;
-        &lt;head&gt;
-            &lt;meta name="viewport" content="initial-scale=1, width=device-width"&gt;
-            &lt;title&gt;meta&lt;/title&gt;
-        &lt;/head&gt;
-        &lt;body&gt;
+    <html lang="en">
+        <head>
+            <meta name="viewport" content="initial-scale=1, width=device-width">
+            <title>meta</title>
+        </head>
+        <body>
             Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus convallis scelerisque quam, vel hendrerit lectus viverra eu. Praesent posuere eget lectus ut faucibus. Etiam eu velit laoreet, gravida lorem in, viverra est. Cras ut purus neque. In porttitor non lorem id lobortis. Mauris gravida metus libero, quis maximus dui porta at. Donec lacinia felis consectetur venenatis scelerisque. Nulla eu nisl sollicitudin, varius velit sit amet, vehicula erat. Curabitur sollicitudin felis sit amet orci mattis, a tempus nulla pulvinar. Aliquam erat volutpat.
-        &lt;/body&gt;
-    &lt;/html&gt;
+        </body>
+    </html>
     ```
     
     Tingueu en compte que aquest conjunt d' `meta`atributs fa que aquesta pàgina sigui adaptada per a mòbils.
@@ -374,21 +374,21 @@
 -   Hi ha nombrosos `meta`parells clau-valor que podeu utilitzar:
     
     ```
-    &lt;!DOCTYPE html&gt;
+    <!DOCTYPE html>
     
-    &lt;!-- Demonstrates Open Graph tags --&gt;
+    <!-- Demonstrates Open Graph tags -->
     
-    &lt;html lang="en"&gt;
-        &lt;head&gt;
-            &lt;meta property="og:title" content="CS50"&gt;
-            &lt;meta property="og:description" content="Introduction to the intellectual enterprises of computer science and the art of programming."&gt;
-            &lt;meta property="og:image" content="cat.jpg"&gt;
-            &lt;title&gt;meta&lt;/title&gt;
-        &lt;/head&gt;
-        &lt;body&gt;
+    <html lang="en">
+        <head>
+            <meta property="og:title" content="CS50">
+            <meta property="og:description" content="Introduction to the intellectual enterprises of computer science and the art of programming.">
+            <meta property="og:image" content="cat.jpg">
+            <title>meta</title>
+        </head>
+        <body>
             ...
-        &lt;/body&gt;
-    &lt;/html&gt;
+        </body>
+    </html>
     ```
     
     Tingueu en compte que aquests parells de valors clau es relacionen amb `title`i `description`de la pàgina web.
@@ -396,21 +396,21 @@
 -   També podeu crear formularis que recordin la cerca de Google:
     
     ```
-    &lt;!DOCTYPE html&gt;
+    <!DOCTYPE html>
     
-    &lt;!-- Demonstrates form --&gt;
+    <!-- Demonstrates form -->
     
-    &lt;html lang="en"&gt;
-        &lt;head&gt;
-            &lt;title&gt;search&lt;/title&gt;
-        &lt;/head&gt;
-        &lt;body&gt;
-            &lt;form action="https://www.google.com/search" method="get"&gt;
-                &lt;input name="q" type="search"&gt;
-                &lt;input type="submit" value="Google Search"&gt;
-            &lt;/form&gt;
-        &lt;/body&gt;
-    &lt;/html&gt;
+    <html lang="en">
+        <head>
+            <title>search</title>
+        </head>
+        <body>
+            <form action="https://www.google.com/search" method="get">
+                <input name="q" type="search">
+                <input type="submit" value="Google Search">
+            </form>
+        </body>
+    </html>
     ```
     
     Observeu que `form`s'obre una etiqueta i proporciona l'atribut del que `action`necessitarà. `input`S'inclou el camp, passant el nom `q`i el tipus com a `search`.
@@ -418,21 +418,21 @@
 -   Podem millorar aquesta cerca de la següent manera:
     
     ```
-    &lt;!DOCTYPE html&gt;
+    <!DOCTYPE html>
     
-    &lt;!-- Demonstrates additional form attributes --&gt;
+    <!-- Demonstrates additional form attributes -->
     
-    &lt;html lang="en"&gt;
-        &lt;head&gt;
-            &lt;title&gt;search&lt;/title&gt;
-        &lt;/head&gt;
-        &lt;body&gt;
-            &lt;form action="https://www.google.com/search" method="get"&gt;
-                &lt;input autocomplete="off" autofocus name="q" placeholder="Query" type="search"&gt;
-                &lt;button&gt;Google Search&lt;/button&gt;
-            &lt;/form&gt;
-        &lt;/body&gt;
-    &lt;/html&gt;
+    <html lang="en">
+        <head>
+            <title>search</title>
+        </head>
+        <body>
+            <form action="https://www.google.com/search" method="get">
+                <input autocomplete="off" autofocus name="q" placeholder="Query" type="search">
+                <button>Google Search</button>
+            </form>
+        </body>
+    </html>
     ```
     
     Observeu que `autocomplete`està girat `off`. `autofocus`està habilitat.
@@ -445,21 +445,21 @@
 -   Podem implementar la nostra pròpia pàgina de registre que utilitza execucions regulars de la següent manera:
     
     ```
-    &lt;!DOCTYPE html&gt;
+    <!DOCTYPE html>
     
-    &lt;!-- Demonstrates type="email" --&gt;
+    <!-- Demonstrates type="email" -->
     
-    &lt;html lang="en"&gt;
-        &lt;head&gt;
-            &lt;title&gt;register&lt;/title&gt;
-        &lt;/head&gt;
-        &lt;body&gt;
-            &lt;form&gt;
-                &lt;input autocomplete="off" autofocus name="email" placeholder="Email" type="email"&gt;
-                &lt;button&gt;Register&lt;/button&gt;
-            &lt;/form&gt;
-        &lt;/body&gt;
-    &lt;/html&gt;
+    <html lang="en">
+        <head>
+            <title>register</title>
+        </head>
+        <body>
+            <form>
+                <input autocomplete="off" autofocus name="email" placeholder="Email" type="email">
+                <button>Register</button>
+            </form>
+        </body>
+    </html>
     ```
     
     Observeu que l' `input`etiqueta inclou atributs que indiquen que és del tipus `email`. El navegador sap que ha de comprovar que l'entrada és una adreça de correu electrònic.
@@ -467,21 +467,21 @@
 -   Tot i que el navegador utilitza aquests atributs integrats per comprovar si hi ha una adreça de correu electrònic, podem afegir un `pattern`atribut per assegurar-nos que només les dades específiques acabin a l'adreça de correu electrònic:
     
     ```
-    &lt;!DOCTYPE html&gt;
+    <!DOCTYPE html>
     
-    &lt;!-- Demonstrates pattern attribute --&gt;
+    <!-- Demonstrates pattern attribute -->
     
-    &lt;html lang="en"&gt;
-        &lt;head&gt;
-            &lt;title&gt;register&lt;/title&gt;
-        &lt;/head&gt;
-        &lt;body&gt;
-            &lt;form&gt;
-                &lt;input autocomplete="off" autofocus name="email" pattern=".+@.+\.edu" placeholder="Email" type="email"&gt;
-                &lt;button&gt;Register&lt;/button&gt;
-            &lt;/form&gt;
-        &lt;/body&gt;
-    &lt;/html&gt;
+    <html lang="en">
+        <head>
+            <title>register</title>
+        </head>
+        <body>
+            <form>
+                <input autocomplete="off" autofocus name="email" pattern=".+@.+\.edu" placeholder="Email" type="email">
+                <button>Register</button>
+            </form>
+        </body>
+    </html>
     ```
     
     Tingueu en compte que l' `pattern`atribut rep una expressió regular per indicar que l'adreça de correu electrònic ha d'incloure un `@`símbol i un `.edu`.
@@ -495,26 +495,26 @@
 -   Al terminal, escriviu `code home.html`i escriviu el codi de la següent manera:
     
     ```
-    &lt;!DOCTYPE html&gt;
+    <!DOCTYPE html>
     
-    &lt;!-- Demonstrates inline CSS with P tags --&gt;
+    <!-- Demonstrates inline CSS with P tags -->
     
-    &lt;html lang="en"&gt;
-        &lt;head&gt;
-            &lt;title&gt;css&lt;/title&gt;
-        &lt;/head&gt;
-        &lt;body&gt;
-            &lt;p style="font-size: large; text-align: center;"&gt;
+    <html lang="en">
+        <head>
+            <title>css</title>
+        </head>
+        <body>
+            <p style="font-size: large; text-align: center;">
                 John Harvard
-            &lt;/p&gt;
-            &lt;p style="font-size: medium; text-align: center;"&gt;
+            </p>
+            <p style="font-size: medium; text-align: center;">
                 Welcome to my home page!
-            &lt;/p&gt;
-            &lt;p style="font-size: small; text-align: center;"&gt;
+            </p>
+            <p style="font-size: small; text-align: center;">
                 Copyright &amp;#169; John Harvard
-            &lt;/p&gt;
-        &lt;/body&gt;
-    &lt;/html&gt;
+            </p>
+        </body>
+    </html>
     ```
     
     Tingueu en compte que alguns `style`atributs es proporcionen a les `<p>`etiquetes. S'estableix `font-size`en `large`, `medium`, o `small`. Després `text-align`es posa al centre.
@@ -522,26 +522,26 @@
 -   Tot i que és correcte, l'anterior no està ben dissenyat. Podem eliminar la redundància modificant el nostre codi de la següent manera:
     
     ```
-    &lt;!DOCTYPE html&gt;
+    <!DOCTYPE html>
     
-    &lt;!-- Removes outer DIV --&gt;
+    <!-- Removes outer DIV -->
     
-    &lt;html lang="en"&gt;
-        &lt;head&gt;
-            &lt;title&gt;css&lt;/title&gt;
-        &lt;/head&gt;
-        &lt;body style="text-align: center"&gt;
-            &lt;div style="font-size: large"&gt;
+    <html lang="en">
+        <head>
+            <title>css</title>
+        </head>
+        <body style="text-align: center">
+            <div style="font-size: large">
                 John Harvard
-            &lt;/div&gt;
-            &lt;div style="font-size: medium"&gt;
+            </div>
+            <div style="font-size: medium">
                 Welcome to my home page!
-            &lt;/div&gt;
-            &lt;div style="font-size: small"&gt;
+            </div>
+            <div style="font-size: small">
                 Copyright &amp;#169; John Harvard
-            &lt;/div&gt;
-        &lt;/body&gt;
-    &lt;/html&gt;
+            </div>
+        </body>
+    </html>
     ```
     
     Tingueu en compte que `<div>`les etiquetes s'utilitzen per dividir aquest fitxer HTML en regions específiques. `text-align: center`s'invoca a tot el cos de l'HTML. Com que tot el que hi ha a dins `body`és fill de `body`, l' `center`atribut cau en cascada a aquests nens.
@@ -549,26 +549,26 @@
 -   Resulta que hi ha etiquetes semàntiques més noves que s'inclouen a HTML. Podem modificar el nostre codi de la següent manera:
     
     ```
-    &lt;!DOCTYPE html&gt;
+    <!DOCTYPE html>
     
-    &lt;!-- Uses semantic tags instead of DIVs --&gt;
+    <!-- Uses semantic tags instead of DIVs -->
     
-    &lt;html lang="en"&gt;
-        &lt;head&gt;
-            &lt;title&gt;css&lt;/title&gt;
-        &lt;/head&gt;
-        &lt;body style="text-align: center"&gt;
-            &lt;header style="font-size: large"&gt;
+    <html lang="en">
+        <head>
+            <title>css</title>
+        </head>
+        <body style="text-align: center">
+            <header style="font-size: large">
                 John Harvard
-            &lt;/header&gt;
-            &lt;main style="font-size: medium"&gt;
+            </header>
+            <main style="font-size: medium">
                 Welcome to my home page!
-            &lt;/main&gt;
-            &lt;footer style="font-size: small"&gt;
+            </main>
+            <footer style="font-size: small">
                 Copyright &amp;#169; John Harvard
-            &lt;/footer&gt;
-        &lt;/body&gt;
-    &lt;/html&gt;
+            </footer>
+        </body>
+    </html>
     ```
     
     Observeu que els `header`i `footer`tots dos tenen diferents estils assignats.
@@ -576,11 +576,11 @@
 -   Aquesta pràctica de col·locar l'estil i la informació al mateix lloc no és una bona pràctica. Podríem moure els elements d'estil a la part superior del fitxer de la següent manera:
     
     ```
-    &lt;!-- Demonstrates class selectors --&gt;
+    <!-- Demonstrates class selectors -->
     
-    &lt;html lang="en"&gt;
-        &lt;head&gt;
-            &lt;style&gt;
+    <html lang="en">
+        <head>
+            <style>
     
                 .centered
                 {
@@ -602,21 +602,21 @@
                     font-size: small;
                 }
     
-            &lt;/style&gt;
-            &lt;title&gt;css&lt;/title&gt;
-        &lt;/head&gt;
-        &lt;body class="centered"&gt;
-            &lt;header class="large"&gt;
+            </style>
+            <title>css</title>
+        </head>
+        <body class="centered">
+            <header class="large">
                 John Harvard
-            &lt;/header&gt;
-            &lt;main class="medium"&gt;
+            </header>
+            <main class="medium">
                 Welcome to my home page!
-            &lt;/main&gt;
-            &lt;footer class="small"&gt;
+            </main>
+            <footer class="small">
                 Copyright &amp;#169; John Harvard
-            &lt;/footer&gt;
-        &lt;/body&gt;
-    &lt;/html&gt;
+            </footer>
+        </body>
+    </html>
     ```
     
     Observeu que totes les etiquetes d'estil es col·loquen a `head`l'embolcall de l' `style`etiqueta. Observeu també que hem assignat _classes_ , anomenades `centered`, `large`, `medium`, i `small`als nostres elements, i que seleccionem aquestes classes col·locant un punt abans del nom, com en`.centered`
@@ -650,27 +650,27 @@
 -   Aleshores podem dir al navegador on ha de localitzar el CSS d'aquest fitxer HTML:
     
     ```
-    &lt;!DOCTYPE html&gt;
+    <!DOCTYPE html>
     
-    &lt;!-- Demonstrates external stylesheets --&gt;
+    <!-- Demonstrates external stylesheets -->
     
-    &lt;html lang="en"&gt;
-        &lt;head&gt;
-            &lt;link href="style.css" rel="stylesheet"&gt;
-            &lt;title&gt;css&lt;/title&gt;
-        &lt;/head&gt;
-        &lt;body class="centered"&gt;
-            &lt;header class="large"&gt;
+    <html lang="en">
+        <head>
+            <link href="style.css" rel="stylesheet">
+            <title>css</title>
+        </head>
+        <body class="centered">
+            <header class="large">
                 John Harvard
-            &lt;/header&gt;
-            &lt;main class="medium"&gt;
+            </header>
+            <main class="medium">
                 Welcome to my home page!
-            &lt;/main&gt;
-            &lt;footer class="small"&gt;
+            </main>
+            <footer class="small">
                 Copyright &amp;#169; John Harvard
-            &lt;/footer&gt;
-        &lt;/body&gt;
-    &lt;/html&gt;
+            </footer>
+        </body>
+    </html>
     ```
     
     Observeu que `style.css`està enllaçat a aquest fitxer HTML com a full d'estils, indicant al navegador on ha de localitzar els estils que hem creat.
@@ -683,48 +683,48 @@
 -   Bootstrap es pot utilitzar afegint l' `link`etiqueta següent al `head`fitxer html:
     
     ```
-    &lt;head&gt;
-          &lt;link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous"&gt;
-        &lt;title&gt;favorites&lt;/title&gt;
-    &lt;/head&gt;
+    <head>
+          <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+        <title>favorites</title>
+    </head>
     ```
     
 -   Considereu el següent HTML:
     
     ```
-    &lt;!DOCTYPE html&gt;
+    <!DOCTYPE html>
     
-    &lt;!-- Demonstrates table --&gt;
+    <!-- Demonstrates table -->
     
-    &lt;html lang="en"&gt;
-        &lt;head&gt;
-            &lt;title&gt;phonebook&lt;/title&gt;
-        &lt;/head&gt;
-        &lt;body&gt;
-            &lt;table&gt;
-                &lt;thead&gt;
-                    &lt;tr&gt;
-                        &lt;th&gt;Name&lt;/th&gt;
-                        &lt;th&gt;Number&lt;/th&gt;
-                    &lt;/tr&gt;
-                &lt;/thead&gt;
-                &lt;tbody&gt;
-                    &lt;tr&gt;
-                        &lt;td&gt;Carter&lt;/td&gt;
-                        &lt;td&gt;+1-617-495-1000&lt;/td&gt;
-                    &lt;/tr&gt;
-                    &lt;tr&gt;
-                        &lt;td&gt;David&lt;/td&gt;
-                        &lt;td&gt;+1-617-495-1000&lt;/td&gt;
-                    &lt;/tr&gt;
-                    &lt;tr&gt;
-                        &lt;td&gt;John&lt;/td&gt;
-                        &lt;td&gt;+1-949-468-2750&lt;/td&gt;
-                    &lt;/tr&gt;
-                &lt;/tbody&gt;
-            &lt;/table&gt;
-        &lt;/body&gt;
-    &lt;/html&gt;
+    <html lang="en">
+        <head>
+            <title>phonebook</title>
+        </head>
+        <body>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Name</th>
+                        <th>Number</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Carter</td>
+                        <td>+1-617-495-1000</td>
+                    </tr>
+                    <tr>
+                        <td>David</td>
+                        <td>+1-617-495-1000</td>
+                    </tr>
+                    <tr>
+                        <td>John</td>
+                        <td>+1-949-468-2750</td>
+                    </tr>
+                </tbody>
+            </table>
+        </body>
+    </html>
     ```
     
     Observeu com quan mireu una versió publicada d'aquesta pàgina, és molt clar.
@@ -732,36 +732,36 @@
 -   Ara considereu el següent HTML que implementa l'ús de Bootstrap:
     
     ```
-    &lt;!DOCTYPE html&gt;
+    <!DOCTYPE html>
     
-    &lt;!-- Demonstrates table with Bootstrap --&gt;
+    <!-- Demonstrates table with Bootstrap -->
     
-    &lt;html lang="en"&gt;
-        &lt;head&gt;
-            &lt;link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous"&gt;
-            &lt;title&gt;phonebook&lt;/title&gt;
-        &lt;/head&gt;
-        &lt;body&gt;
-            &lt;table class="table"&gt;
-                &lt;thead&gt;
-                    &lt;tr&gt;
-                        &lt;th scope="col"&gt;Name&lt;/th&gt;
-                        &lt;th scope="col"&gt;Number&lt;/th&gt;
-                    &lt;/tr&gt;
-                &lt;/thead&gt;
-                &lt;tbody&gt;
-                    &lt;tr&gt;
-                        &lt;td&gt;Carter&lt;/td&gt;
-                        &lt;td&gt;+1-617-495-1000&lt;/td&gt;
-                    &lt;/tr&gt;
-                    &lt;tr&gt;
-                        &lt;td&gt;David&lt;/td&gt;
-                        &lt;td&gt;+1-949-468-2750&lt;/td&gt;
-                    &lt;/tr&gt;
-                &lt;/tbody&gt;
-            &lt;/table&gt;
-        &lt;/body&gt;
-    &lt;/html&gt;
+    <html lang="en">
+        <head>
+            <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+            <title>phonebook</title>
+        </head>
+        <body>
+            <table class="table">
+                <thead>
+                    <tr>
+                        <th scope="col">Name</th>
+                        <th scope="col">Number</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Carter</td>
+                        <td>+1-617-495-1000</td>
+                    </tr>
+                    <tr>
+                        <td>David</td>
+                        <td>+1-949-468-2750</td>
+                    </tr>
+                </tbody>
+            </table>
+        </body>
+    </html>
     ```
     
     Fixeu-vos que aquest lloc web és molt més bonic ara.
@@ -769,61 +769,61 @@
 -   De la mateixa manera, tingueu en compte la següent expansió de la nostra pàgina de cerca creada anteriorment:
     
     ```
-    &lt;!DOCTYPE html&gt;
+    <!DOCTYPE html>
     
-    &lt;!-- Demonstrates layout with Bootstrap --&gt;
+    <!-- Demonstrates layout with Bootstrap -->
     
-    &lt;html lang="en"&gt;
-        &lt;head&gt;
-            &lt;link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous"&gt;
-            &lt;title&gt;search&lt;/title&gt;
-        &lt;/head&gt;
-        &lt;body&gt;
+    <html lang="en">
+        <head>
+            <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+            <title>search</title>
+        </head>
+        <body>
     
-            &lt;div class="container-fluid"&gt;
+            <div class="container-fluid">
     
-                &lt;ul class="m-3 nav"&gt;
-                    &lt;li class="nav-item"&gt;
-                        &lt;a class="nav-link text-dark" href="https://about.google/"&gt;About&lt;/a&gt;
-                    &lt;/li&gt;
-                    &lt;li class="nav-item"&gt;
-                        &lt;a class="nav-link text-dark" href="https://store.google.com/"&gt;Store&lt;/a&gt;
-                    &lt;/li&gt;
-                    &lt;li class="nav-item ms-auto"&gt;
-                        &lt;a class="nav-link text-dark" href="https://www.google.com/gmail/"&gt;Gmail&lt;/a&gt;
-                    &lt;/li&gt;
-                    &lt;li class="nav-item"&gt;
-                        &lt;a class="nav-link text-dark" href="https://www.google.com/imghp"&gt;Images&lt;/a&gt;
-                    &lt;/li&gt;
-                    &lt;li class="nav-item"&gt;
-                        &lt;a class="nav-link text-dark" href="https://www.google.com/intl/en/about/products"&gt;
-                            &lt;svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-grid-3x3-gap-fill" viewBox="0 0 16 16"&gt;
-                                &lt;path d="M1 2a1 1 0 0 1 1-1h2a1 1 0 0 1 1 1v2a1 1 0 0 1-1 1H2a1 1 0 0 1-1-1V2zm5 0a1 1 0 0 1 1-1h2a1 1 0 0 1 1 1v2a1 1 0 0 1-1 1H7a1 1 0 0 1-1-1V2zm5 0a1 1 0 0 1 1-1h2a1 1 0 0 1 1 1v2a1 1 0 0 1-1 1h-2a1 1 0 0 1-1-1V2zM1 7a1 1 0 0 1 1-1h2a1 1 0 0 1 1 1v2a1 1 0 0 1-1 1H2a1 1 0 0 1-1-1V7zm5 0a1 1 0 0 1 1-1h2a1 1 0 0 1 1 1v2a1 1 0 0 1-1 1H7a1 1 0 0 1-1-1V7zm5 0a1 1 0 0 1 1-1h2a1 1 0 0 1 1 1v2a1 1 0 0 1-1 1h-2a1 1 0 0 1-1-1V7zM1 12a1 1 0 0 1 1-1h2a1 1 0 0 1 1 1v2a1 1 0 0 1-1 1H2a1 1 0 0 1-1-1v-2zm5 0a1 1 0 0 1 1-1h2a1 1 0 0 1 1 1v2a1 1 0 0 1-1 1H7a1 1 0 0 1-1-1v-2zm5 0a1 1 0 0 1 1-1h2a1 1 0 0 1 1 1v2a1 1 0 0 1-1 1h-2a1 1 0 0 1-1-1v-2z"/&gt;
-                            &lt;/svg&gt;
-                        &lt;/a&gt;
-                    &lt;/li&gt;
-                    &lt;li class="nav-item"&gt;
-                        &lt;a class="btn btn-primary" href="https://accounts.google.com/ServiceLogin" role="button"&gt;Sign in&lt;/a&gt;
-                    &lt;/li&gt;
-                &lt;/ul&gt;
+                <ul class="m-3 nav">
+                    <li class="nav-item">
+                        <a class="nav-link text-dark" href="https://about.google/">About</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link text-dark" href="https://store.google.com/">Store</a>
+                    </li>
+                    <li class="nav-item ms-auto">
+                        <a class="nav-link text-dark" href="https://www.google.com/gmail/">Gmail</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link text-dark" href="https://www.google.com/imghp">Images</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link text-dark" href="https://www.google.com/intl/en/about/products">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-grid-3x3-gap-fill" viewBox="0 0 16 16">
+                                <path d="M1 2a1 1 0 0 1 1-1h2a1 1 0 0 1 1 1v2a1 1 0 0 1-1 1H2a1 1 0 0 1-1-1V2zm5 0a1 1 0 0 1 1-1h2a1 1 0 0 1 1 1v2a1 1 0 0 1-1 1H7a1 1 0 0 1-1-1V2zm5 0a1 1 0 0 1 1-1h2a1 1 0 0 1 1 1v2a1 1 0 0 1-1 1h-2a1 1 0 0 1-1-1V2zM1 7a1 1 0 0 1 1-1h2a1 1 0 0 1 1 1v2a1 1 0 0 1-1 1H2a1 1 0 0 1-1-1V7zm5 0a1 1 0 0 1 1-1h2a1 1 0 0 1 1 1v2a1 1 0 0 1-1 1H7a1 1 0 0 1-1-1V7zm5 0a1 1 0 0 1 1-1h2a1 1 0 0 1 1 1v2a1 1 0 0 1-1 1h-2a1 1 0 0 1-1-1V7zM1 12a1 1 0 0 1 1-1h2a1 1 0 0 1 1 1v2a1 1 0 0 1-1 1H2a1 1 0 0 1-1-1v-2zm5 0a1 1 0 0 1 1-1h2a1 1 0 0 1 1 1v2a1 1 0 0 1-1 1H7a1 1 0 0 1-1-1v-2zm5 0a1 1 0 0 1 1-1h2a1 1 0 0 1 1 1v2a1 1 0 0 1-1 1h-2a1 1 0 0 1-1-1v-2z"/>
+                            </svg>
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="btn btn-primary" href="https://accounts.google.com/ServiceLogin" role="button">Sign in</a>
+                    </li>
+                </ul>
     
-                &lt;div class="text-center"&gt;
+                <div class="text-center">
     
-                    &lt;!-- https://knowyourmeme.com/memes/happy-cat --&gt;
-                    &lt;img alt="Happy Cat" class="img-fluid w-25" src="cat.gif"&gt;
+                    <!-- https://knowyourmeme.com/memes/happy-cat -->
+                    <img alt="Happy Cat" class="img-fluid w-25" src="cat.gif">
     
-                    &lt;form action="https://www.google.com/search" class="mt-4" method="get"&gt;
-                        &lt;input autocomplete="off" autofocus class="form-control form-control-lg mb-4 mx-auto w-50" name="q" placeholder="Query" type="search"&gt;
-                        &lt;button class="btn btn-light"&gt;Google Search&lt;/button&gt;
-                        &lt;button class="btn btn-light" name="btnI"&gt;I'm Feeling Lucky&lt;/button&gt;
-                    &lt;/form&gt;
+                    <form action="https://www.google.com/search" class="mt-4" method="get">
+                        <input autocomplete="off" autofocus class="form-control form-control-lg mb-4 mx-auto w-50" name="q" placeholder="Query" type="search">
+                        <button class="btn btn-light">Google Search</button>
+                        <button class="btn btn-light" name="btnI">I'm Feeling Lucky</button>
+                    </form>
     
-                &lt;/div&gt;
+                </div>
     
-            &lt;/div&gt;
+            </div>
     
-        &lt;/body&gt;
-    &lt;/html&gt;
+        </body>
+    </html>
     ```
     
     Aquesta versió de la pàgina està molt estilitzada, gràcies a Bootstrap.
@@ -836,29 +836,29 @@
 -   Considereu la següent implementació `hello.html`que inclou tant JavaScript com HTML:
     
     ```
-    &lt;!DOCTYPE html&gt;
+    <!DOCTYPE html>
     
-    &lt;!-- Demonstrates onsubmit --&gt;
+    <!-- Demonstrates onsubmit -->
     
-    &lt;html lang="en"&gt;
-        &lt;head&gt;
-            &lt;script&gt;
+    <html lang="en">
+        <head>
+            <script>
     
                 function greet()
                 {
                     alert('hello, ' + document.querySelector('#name').value);
                 }
     
-            &lt;/script&gt;
-            &lt;title&gt;hello&lt;/title&gt;
-        &lt;/head&gt;
-        &lt;body&gt;
-            &lt;form onsubmit="greet(); return false;"&gt;
-                &lt;input autocomplete="off" autofocus id="name" placeholder="Name" type="text"&gt;
-                &lt;input type="submit"&gt;
-            &lt;/form&gt;
-        &lt;/body&gt;
-    &lt;/html&gt;
+            </script>
+            <title>hello</title>
+        </head>
+        <body>
+            <form onsubmit="greet(); return false;">
+                <input autocomplete="off" autofocus id="name" placeholder="Name" type="text">
+                <input type="submit">
+            </form>
+        </body>
+    </html>
     ```
     
     Observeu com aquest formulari utilitza una `onsubmit`propietat per activar un `script`trobat a la part superior del fitxer. L'script s'utilitza `alert`per crear una finestra emergent d'alerta. `#name.value`va al quadre de text de la pàgina i obté el valor escrit per l'usuari.
@@ -866,13 +866,13 @@
 -   En general, es considera un mal disseny barrejar onsubmit i JavaScript. Podem avançar el nostre codi de la següent manera:
     
     ```
-    &lt;!DOCTYPE html&gt;
+    <!DOCTYPE html>
     
-    &lt;!-- Demonstrates DOMContentLoaded --&gt;
+    <!-- Demonstrates DOMContentLoaded -->
     
-    &lt;html lang="en"&gt;
-        &lt;head&gt;
-            &lt;script&gt;
+    <html lang="en">
+        <head>
+            <script>
     
                 document.addEventListener('DOMContentLoaded', function() {
                     document.querySelector('form').addEventListener('submit', function(e) {
@@ -881,16 +881,16 @@
                     });
                 });
     
-            &lt;/script&gt;
-            &lt;title&gt;hello&lt;/title&gt;
-        &lt;/head&gt;
-        &lt;body&gt;
-            &lt;form&gt;
-                &lt;input autocomplete="off" autofocus id="name" placeholder="Name" type="text"&gt;
-                &lt;input type="submit"&gt;
-            &lt;/form&gt;
-        &lt;/body&gt;
-    &lt;/html&gt;
+            </script>
+            <title>hello</title>
+        </head>
+        <body>
+            <form>
+                <input autocomplete="off" autofocus id="name" placeholder="Name" type="text">
+                <input type="submit">
+            </form>
+        </body>
+    </html>
     ```
     
     Tingueu en compte que aquesta versió del codi crea un `addEventListener`per escoltar el formulari `submit`que s'està activant. Observeu com `DOMContentLoaded`s'assegura que tota la pàgina es carregui abans d'executar el JavaScript.
@@ -899,19 +899,19 @@
 -   Considereu el següent HTML:
     
     ```
-    &lt;!DOCTYPE html&gt;
+    <!DOCTYPE html>
     
-    &lt;!-- Demonstrates programmatic changes to style --&gt;
+    <!-- Demonstrates programmatic changes to style -->
     
-    &lt;html lang="en"&gt;
-        &lt;head&gt;
-            &lt;title&gt;background&lt;/title&gt;
-        &lt;/head&gt;
-        &lt;body&gt;
-            &lt;button id="red"&gt;R&lt;/button&gt;
-            &lt;button id="green"&gt;G&lt;/button&gt;
-            &lt;button id="blue"&gt;B&lt;/button&gt;
-            &lt;script&gt;
+    <html lang="en">
+        <head>
+            <title>background</title>
+        </head>
+        <body>
+            <button id="red">R</button>
+            <button id="green">G</button>
+            <button id="blue">B</button>
+            <script>
     
                 let body = document.querySelector('body');
                 document.querySelector('#red').addEventListener('click', function() {
@@ -924,9 +924,9 @@
                     body.style.backgroundColor = 'blue';
                 });
     
-            &lt;/script&gt;
-        &lt;/body&gt;
-    &lt;/html&gt;
+            </script>
+        </body>
+    </html>
     ```
     
     Tingueu en compte que JavaScript escolta quan es fa clic en un botó específic. En fer clic, es canvien determinats atributs d'estil de la pàgina. `body`es defineix com el cos de la pàgina. Aleshores, un oient d'esdeveniments espera que faci clic a un dels botons. Aleshores, es `body.style.backgroundColor`canvia.
@@ -934,11 +934,11 @@
 -   De la mateixa manera, tingueu en compte el següent:
     
     ```
-    &lt;!DOCTYPE html&gt;
+    <!DOCTYPE html>
     
-    &lt;html lang="en"&gt;
-        &lt;head&gt;
-            &lt;script&gt;
+    <html lang="en">
+        <head>
+            <script>
     
                 // Toggles visibility of greeting
                 function blink()
@@ -957,13 +957,13 @@
                 // Blink every 500ms
                 window.setInterval(blink, 500);
     
-            &lt;/script&gt;
-            &lt;title&gt;blink&lt;/title&gt;
-        &lt;/head&gt;
-        &lt;body&gt;
+            </script>
+            <title>blink</title>
+        </head>
+        <body>
             hello, world
-        &lt;/body&gt;
-    &lt;/html&gt;
+        </body>
+    </html>
     ```
     
     Aquest exemple parpelleja un text a un interval determinat. Observeu que `window.setInterval`admet dos arguments: una funció a cridar i un període d'espera (en mil·lisegons) entre les trucades de funció.
@@ -971,22 +971,22 @@
 -   Tingueu en compte el següent:
     
     ```
-    &lt;!DOCTYPE html&gt;
+    <!DOCTYPE html>
     
-    &lt;html lang="en"&gt;
+    <html lang="en">
     
-        &lt;head&gt;
-            &lt;title&gt;autocomplete&lt;/title&gt;
-        &lt;/head&gt;
+        <head>
+            <title>autocomplete</title>
+        </head>
     
-        &lt;body&gt;
+        <body>
     
-            &lt;input autocomplete="off" autofocus placeholder="Query" type="text"&gt;
+            <input autocomplete="off" autofocus placeholder="Query" type="text">
     
-            &lt;ul&gt;&lt;/ul&gt;
+            <ul></ul>
     
-            &lt;script src="large.js"&gt;&lt;/script&gt;
-            &lt;script&gt;
+            <script src="large.js"></script>
+            <script>
           
                 let input = document.querySelector('input');
                 input.addEventListener('keyup', function(event) {
@@ -994,17 +994,17 @@
                     if (input.value) {
                         for (word of WORDS) {
                             if (word.startsWith(input.value)) {
-                                html += `&lt;li&gt;${word}&lt;/li&gt;`;
+                                html += `<li>${word}</li>`;
                             }
                         }
                     }
                     document.querySelector('ul').innerHTML = html;
                 });
     
-            &lt;/script&gt;
+            </script>
     
-        &lt;/body&gt;
-    &lt;/html&gt;
+        </body>
+    </html>
     ```
     
     Aquesta és una implementació de JavaScript d'autocompletar. Això s'extreu d'un fitxer (no representat aquí) anomenat `large.js`que és una llista de paraules.
@@ -1012,22 +1012,22 @@
 -   Curiosament, també podem geolocalitzar mitjançant JavaScript:
     
     ```
-    &lt;!DOCTYPE html&gt;
+    <!DOCTYPE html>
     
-    &lt;html lang="en"&gt;
-        &lt;head&gt;
-            &lt;title&gt;geolocation&lt;/title&gt;
-        &lt;/head&gt;
-        &lt;body&gt;
-            &lt;script&gt;
+    <html lang="en">
+        <head>
+            <title>geolocation</title>
+        </head>
+        <body>
+            <script>
               
                 navigator.geolocation.getCurrentPosition(function(position) {
                     document.write(position.coords.latitude + ", " + position.coords.longitude);
                 });
     
-            &lt;/script&gt;
-        &lt;/body&gt;
-    &lt;/html&gt;
+            </script>
+        </body>
+    </html>
     ```
     
     Fixeu-vos que `navigator.geolocation`s'acostuma a `getCurrentPosition`. Això no funcionarà si el vostre ordinador o navegador no permet el seguiment de la ubicació.
