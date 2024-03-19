@@ -1,3 +1,4 @@
+# HTML, CSS, Javascript
 ## Encaminadors (Routers)
 -   Per encaminar les dades d'un lloc a un altre, hem de prendre _decisions d'encaminament_ . És a dir, algú ha de programar com es transfereixen les dades del punt A al punt B.
 -   Us podeu imaginar com les dades podrien agafar diversos camins des del punt A i del punt B, de manera que quan un encaminador està congestionat, les dades poden fluir per un altre camí. _Els paquets_ de dades es transfereixen d'un encaminador a un altre, d'un ordinador a un altre.
@@ -682,7 +683,7 @@
 -   _Bootstrap_ és un d'aquests marcs que podem utilitzar per embellir el nostre HTML i perfeccionar fàcilment els elements de disseny de manera que les nostres pàgines siguin més llegibles.
 -   Bootstrap es pot utilitzar afegint l' `link`etiqueta següent al `head`fitxer html:
     
-    ```
+    ``` html
     <head>
           <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
         <title>favorites</title>
@@ -691,7 +692,7 @@
     
 -   Considereu el següent HTML:
     
-    ```
+    ```html
     <!DOCTYPE html>
     
     <!-- Demonstrates table -->
@@ -731,7 +732,7 @@
     
 -   Ara considereu el següent HTML que implementa l'ús de Bootstrap:
     
-    ```
+    ``` html
     <!DOCTYPE html>
     
     <!-- Demonstrates table with Bootstrap -->
@@ -768,7 +769,7 @@
     
 -   De la mateixa manera, tingueu en compte la següent expansió de la nostra pàgina de cerca creada anteriorment:
     
-    ```
+    ``` html
     <!DOCTYPE html>
     
     <!-- Demonstrates layout with Bootstrap -->
@@ -830,13 +831,13 @@
     
 -   Podeu obtenir més informació sobre això a la [documentació de Bootstrap](https://getbootstrap.com/docs/) .
 
-## [JavaScript](https://cs50.harvard.edu/x/2024/notes/8/#javascript)
+## JavaScript
 
 -   JavaScript és un altre llenguatge de programació que permet la interactivitat dins de les pàgines web.
 -   Considereu la següent implementació `hello.html`que inclou tant JavaScript com HTML:
     
-    ```
-    <!DOCTYPE html>
+    ```html
+    <!DOCTYPE html> 
     
     <!-- Demonstrates onsubmit -->
     
@@ -865,7 +866,7 @@
     
 -   En general, es considera un mal disseny barrejar onsubmit i JavaScript. Podem avançar el nostre codi de la següent manera:
     
-    ```
+    ```html
     <!DOCTYPE html>
     
     <!-- Demonstrates DOMContentLoaded -->
@@ -898,7 +899,7 @@
 -   JavaScript us permet llegir i modificar dinàmicament el document html carregat a la memòria de manera que l'usuari no necessita tornar a carregar per veure els canvis.
 -   Considereu el següent HTML:
     
-    ```
+    ```html
     <!DOCTYPE html>
     
     <!-- Demonstrates programmatic changes to style -->
@@ -933,7 +934,7 @@
     
 -   De la mateixa manera, tingueu en compte el següent:
     
-    ```
+    ``` html
     <!DOCTYPE html>
     
     <html lang="en">
@@ -970,7 +971,7 @@
     
 -   Tingueu en compte el següent:
     
-    ```
+    ``` html
     <!DOCTYPE html>
     
     <html lang="en">
@@ -1010,8 +1011,8 @@
     Aquesta és una implementació de JavaScript d'autocompletar. Això s'extreu d'un fitxer (no representat aquí) anomenat `large.js`que és una llista de paraules.
     
 -   Curiosament, també podem geolocalitzar mitjançant JavaScript:
-    
-    ```
+
+    ``` html
     <!DOCTYPE html>
     
     <html lang="en">
@@ -1034,8 +1035,7 @@
     
 -   Les capacitats de JavaScript són moltes i es poden trobar a la [documentació de JavaScript](https://developer.mozilla.org/en-US/docs/Web/JavaScript) .
 
-## [Resumint](https://cs50.harvard.edu/x/2024/notes/8/#summing-up)
-
+## Resumint
 En aquesta lliçó, heu après a crear els vostres propis fitxers HTML, estilitzar-los, aprofitar marcs de tercers i utilitzar JavaScript. En concret, hem parlat...
 
 -   TCP/IP
